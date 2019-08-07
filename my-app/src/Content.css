@@ -1,0 +1,33 @@
+.navbar-brand {
+  margin: 88px auto 114px auto;
+}
+
+.navbar {
+  flex-flow: row wrap;
+}
+
+.navbar-nav {
+  flex-direction: column;
+}
+
+.nav-link {
+  color: #3C3C3B !important;
+  font-size: 1.6rem;
+  margin-bottom: 17px;
+  padding-left: 19px !important;
+}
+
+.phoneNum {
+  padding-right: 19px;
+  margin-top: 69px;
+  opacity: 0.3;
+  font-size: 1.6rem;
+}
+
+/* .snake {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: auto;
+  z-index: 3;
+} */

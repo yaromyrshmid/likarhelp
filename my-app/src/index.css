@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3C3C3B;
+  background-color:  #EEEEEE;
+}
+
+.container {
+  height: 100vh;
+}
+
+a {
+  color: #3C3C3B;
+} 
+
+a:hover {
+  text-decoration: none;
+  color: #3C3C3B;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
