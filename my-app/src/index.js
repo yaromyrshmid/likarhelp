@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row} from 'react-bootstrap';
-import './index.css';
-import {Navigation, Screen1, SnakeLogo} from './Content';
+import 'bootstrap/dist/css/bootstrap.css';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './index.css';
 
 
-ReactDOM.render(<Container><SnakeLogo /><Row><Navigation /> <Screen1 /></Row> </Container>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker.unregister();

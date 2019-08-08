@@ -1,0 +1,23 @@
+.navbar {
+  padding-top: 0px;
+  display: block;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar-brand {
+  margin: 84px 0 103px 0;
+  padding: 0;
+}
+
+.navbar-nav {
+  display: block;  
+}
+
+.nav-link {
+  color: #3C3C3B !important;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+
+}
+

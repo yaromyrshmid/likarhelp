@@ -1,0 +1,46 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", 'Roboto', sans-serif;
+  color: #3C3C3B;
+  background-color:  #EEEEEE;
+}
+
+.container {
+  height: 100vh;
+  background-image: url('./images/snake_logo.svg');
+  background-position: center 70%;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #3C3C3B;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3C3C3B;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 6.8rem;
+  line-height: 95%;
+  letter-spacing: -0.04rem;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 4.8rem;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 24px;
+}
