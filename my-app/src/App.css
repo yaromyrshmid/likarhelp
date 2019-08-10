@@ -11,13 +11,11 @@ body {
 
 .container {
   height: 100vh;
-  background-image: url('./images/snake_logo.svg');
-  background-position: center 70%;
-  background-repeat: no-repeat;
 }
 
 a {
   color: #3C3C3B;
+  font-size: 1.6rem;
 }
 
 a:hover {
@@ -26,7 +24,6 @@ a:hover {
 }
 
 h1 {
-  font-family: "Montserrat";
   font-weight: bolder;
   font-size: 6.8rem;
   line-height: 95%;
@@ -38,6 +35,12 @@ h2 {
   font-weight: bold;
   font-size: 4.8rem;
   margin-bottom: 0;
+  color: #3C3C3B;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 p {

@@ -1,0 +1,11 @@
+.bg4 {
+  background-image: url('../images/Group17.jpg');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  width: 30px;
+  margin-right: 28px;
+  mix-blend-mode: luminosity;
+}

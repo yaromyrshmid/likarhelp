@@ -1,23 +1,33 @@
 import React from 'react';
-import Screen2BG from '../images/costa-screen1.png'
-import { Row, Col } from 'react-bootstrap';
+import FamilyLogo from '../images/family_logo.svg'
+import { Row, Col, Image, Container } from 'react-bootstrap';
 import './Screen2.css';
 
 function Screen2() {
   return (
-    <div>
-      <main class="wrapper">
-        <section class="section parallax bg1">
-          <h1>Such Adorableness</h1>
-        </section>
-        <section class="section static">
-          <h1>Boring</h1>
-        </section>
-        <section class="section parallax bg2">
-          <h1>SO FWUFFY AWWW</h1>
-        </section>
-      </main>
-
+    <div className="section parallax bg2">
+      <Container>
+        <Row>
+          <Col md={{span: 10, offset: 2}}>
+            <hr className="hr-breaker-light"/>
+            <Row className="row-top">
+              <Col md={2}>
+                <h1 className="slide-number">01</h1>
+              </Col>
+              <Col md={{span: 4, offset: 8}}>
+                <div className="blured-circle">
+                </div>
+                <div className="screen2-text">
+                <div className="screen2-logo-container"><Image src={FamilyLogo} /></div>
+                
+                <h2 className="white-text text-right">Наша<br/> місія</h2>
+                <p className="white-text text-right">Медичний сервіс. Його так бракує медицині сьогодення. Ми створюємо просте і якісне надання послуг людям. Це необхідно і зручно як пацієнтам, так і лікарям.</p>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </div>
   )
 }

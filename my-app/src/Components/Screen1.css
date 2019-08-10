@@ -1,3 +1,12 @@
+.bg1 {
+  background-image: url('../images/snake_logo.svg');
+  background-position: center;
+  background-position-y: 30%;
+  background-size: 436px 622px;
+  background-repeat: no-repeat;
+  background-color: #EEEEEE;
+}
+
 .phoneRow {
   display: flex;
   flex-direction: row-reverse;
@@ -15,13 +24,13 @@
   width: 505px;
   height: 607px;
   position: absolute;
-  left: 0;
+  left: -50px;
   z-index: 1;
 }
 
 .hr-breaker {
   position: absolute;
-  left: 12%;
+  left: 14%;
   width: 0px;
   height: 99.7vh;
   border: 1px solid #000000;
@@ -85,4 +94,8 @@
   height: 40px;
   margin-top: -30px;
   margin-bottom: 0px;
+}
+
+.maroon {
+  color: #BD5D69;
 }

@@ -1,15 +1,14 @@
 import React from 'react';
 import Costa from '../images/costa-screen1.png'
-import { Row, Image, Col, Card } from 'react-bootstrap';
+import { Row, Image, Col, Card, Container } from 'react-bootstrap';
 import './Screen1.css';
 
 function Screen1() {
   return (
-    <Row>
-      <Col md={2}>
-      </Col>
-      
-      <Col md={10}>
+    <div className="section bg1">
+      <Container>
+      <Row>
+      <Col md={{span: 10, offset: 2}}>
         <hr className="hr-breaker"/>
         <Row className="phoneRow">
           <a className="phoneNum" href="tel:+380671035848">+38 067 103 5848</a>
@@ -34,7 +33,7 @@ function Screen1() {
                   </div>
                   <Card.Body>
                   <Card.Title>
-                    <h2>200</h2>
+                    <h2 className="maroon">200</h2>
                   </Card.Title>
                   <Card.Text>
                   грн
@@ -60,6 +59,8 @@ function Screen1() {
 
       </Col>
     </Row>
+    </Container>
+    </div>
   )
 }
 
