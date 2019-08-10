@@ -16,7 +16,7 @@ function Navigation() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav>
-                  <Nav.Link href="#home">Наша місія</Nav.Link>
+                  <Nav.Link onScroll={()=>{console.log('clicked')}} href="#home">Наша місія</Nav.Link>
                   <Nav.Link href="#link">Послуги</Nav.Link>
                   <Nav.Link href="#link">Контакти</Nav.Link>
                 </Nav>

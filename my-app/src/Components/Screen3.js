@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Image, Container } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import './Screen3.css';
 
 function Screen3() {
