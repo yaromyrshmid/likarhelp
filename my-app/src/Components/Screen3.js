@@ -1,10 +1,11 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import './Screen3.css';
+import '../css/Screens.css';
+import '../css/Screen3.css';
 
 function Screen3() {
   return (
-    <div className="section bg3">
+    <div id="Screen3" className="section bg3">
       <Container>
         <Row>
           <Col md={{span: 10, offset: 2}}>

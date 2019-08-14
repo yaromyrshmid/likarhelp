@@ -3,12 +3,12 @@ import { Row, Col, Image, Container } from 'react-bootstrap';
 import ViberIcon from '../images/viber-icon.svg';
 import SkypeIcon from '../images/skype-icon.svg';
 import TelegIcon from '../images/teleg-icon.svg';
-
-import './Screen4.css';
+import '../css/Screens.css';
+import '../css/Screen4.css';
 
 function Screen4() {
   return (
-    <div className="section bg4">
+    <div id="Screen4" className="section bg4">
       <Container>
         <Row>
           <Col md={{span: 10, offset: 2}}>

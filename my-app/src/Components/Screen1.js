@@ -1,46 +1,35 @@
 import React from 'react';
-import Costa from '../images/costa-screen1.png'
+import Costa from '../images/costa-screen1.png';
 import { Row, Image, Col, Card, Container } from 'react-bootstrap';
-import './Screen1.css';
+import '../css/Screens.css';
+import '../css/Screen1.css';
+
 
 function Screen1() {
   return (
-    <div className="section bg1">
+    <div id="Screen1" className="section bg1">
       <Container>
       <Row>
       <Col md={{span: 10, offset: 2}}>
         <hr className="hr-breaker"/>
-        <Row className="phoneRow">
+        <Row className="flex-row-reverse">
           <a className="phoneNum" href="tel:+380671035848">+38 067 103 5848</a>
         </Row>
         <Row>
           <Col xs={5}>
-            <Image src={Costa} className="costa" alt="Costa Screen1" /> 
+            <Image src={Costa} className="costa" alt="Costa Screen1"/> 
           </Col>
           <Col xs={7}>
-            <Row>
-            <Col xs={{ span: 4, offset: 8 }}>
+            <Row className="flex-row-reverse">
               <Card>
                 <Card.Body>
-                <div className="circle"></div>
-                  <Card.Text>
-                  Консультація<br/>
-                  у вас вдома
-                  </Card.Text>
-                  </Card.Body>
-                  <div className="dots">
-                    <p>..........................</p>
-                  </div>
-                  <Card.Body>
-                  <Card.Title>
-                    <h2 className="maroon">200</h2>
-                  </Card.Title>
-                  <Card.Text>
-                  грн
-                  </Card.Text>
+                  <p>Консультація<br/>
+                  у вас вдома</p>
+                  <p className="dots">...................................</p>
+                  <h2>200</h2>
+                  <p>грн</p>
                 </Card.Body>
               </Card>
-            </Col>
             </Row>
             <Row>
               <Col>
@@ -48,7 +37,7 @@ function Screen1() {
                   <h1>Хірургічна<br/>допомога</h1>
                   <p>допомога дітям та дорослим<br/>
                   вдома, телефоном або у лікарні №3<br/>
-                  м.Львів вул.Раппопорта 6   
+                  м.Львів, вул.Раппопорта 6   
                   </p>
                 </div>
             </Col>

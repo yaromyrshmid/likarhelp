@@ -1,11 +1,12 @@
 import React from 'react';
 import FamilyLogo from '../images/family_logo.svg'
 import { Row, Col, Image, Container } from 'react-bootstrap';
-import './Screen2.css';
+import '../css/Screens.css';
+import '../css/Screen2.css';
 
 function Screen2() {
   return (
-    <div className="section parallax bg2">
+    <div id="Screen2" className="section parallax bg2">
       <Container>
         <Row>
           <Col md={{span: 10, offset: 2}}>

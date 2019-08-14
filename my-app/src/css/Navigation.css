@@ -1,4 +1,6 @@
-
+.navbar-container {
+  height: 0px !important;
+}
 
 .navbar {
   padding-top: 0px;
@@ -23,3 +25,7 @@
 
 }
 
+.is-current {
+  color: red;
+  font-weight: bold;
+}

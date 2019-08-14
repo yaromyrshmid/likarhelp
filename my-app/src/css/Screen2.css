@@ -1,0 +1,26 @@
+.blured-circle {
+  background-color: #000000;
+  height: 650px;
+  width: 650px;
+  filter: blur(210px);
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+  top:0px; right:0px; bottom:0px; left:0px;
+}
+
+.white-text {
+  color: #FFFFFF;
+  z-index: 2;
+  float: right;
+}
+
+.screen2-text{
+  position: absolute;
+}
+
+.screen2-logo-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 40px;
+}

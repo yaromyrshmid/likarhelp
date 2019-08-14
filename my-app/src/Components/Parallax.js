@@ -5,23 +5,33 @@ import Screen2 from './Screen2';
 import Screen3 from './Screen3';
 import Screen4 from './Screen4';
 import { Container } from 'react-bootstrap';
-import './Parallax.css';
+import '../css/Parallax.css';
 
-function Parallax() {
-  return(  
-    <div>
-    <Container className="navbar-container">
-      <Navigation />
-    </Container>
-    <div className="wrapper">
+export class Parallax extends React.Component {
+  // componentDidMount() {
+  //   window.addEventListener('scroll', this.handleScroll, true);
+  // }
+  
+  // handleScroll = () => {
+  //   console.log('scrollin');
+  //   let divka = document.querySelector('.bg3');
+  //   console.log(divka.getBoundingClientRect());
+  // }
 
-      <Screen1/>
-      <Screen2/>
-      <Screen3/>
-      <Screen4/>
-  </div>
-  </div>
-  );
+  render() {
+    return(  
+      <div>
+      <Container className="navbar-container">
+        <Navigation />
+      </Container>
+      <div className="wrapper">
+
+        <Screen1/>
+        <Screen2/>
+        <Screen3/>
+        <Screen4/>
+    </div>
+    </div>
+    );
+  }
 }
-
-export default Parallax;
