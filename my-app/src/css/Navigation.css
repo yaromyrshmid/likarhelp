@@ -19,13 +19,7 @@
 }
 
 .nav-link {
-  color: #3C3C3B !important;
+  color: #3C3C3B;
   font-size: 1.6rem;
   margin-bottom: 15px;
-
-}
-
-.is-current {
-  color: red;
-  font-weight: bold;
 }

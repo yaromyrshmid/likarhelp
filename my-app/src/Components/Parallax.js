@@ -8,16 +8,6 @@ import { Container } from 'react-bootstrap';
 import '../css/Parallax.css';
 
 export class Parallax extends React.Component {
-  // componentDidMount() {
-  //   window.addEventListener('scroll', this.handleScroll, true);
-  // }
-  
-  // handleScroll = () => {
-  //   console.log('scrollin');
-  //   let divka = document.querySelector('.bg3');
-  //   console.log(divka.getBoundingClientRect());
-  // }
-
   render() {
     return(  
       <div>
