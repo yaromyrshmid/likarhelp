@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0eeba372c428b6459a5ec4a1b5d056fa",
+    "revision": "a3c0791d3b0df5a3c8e27b7ec10b7d75",
     "url": "/likarhelp/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/likarhelp/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "6388dcffdf7d58831f97",
+    "revision": "7c29f2dbaa47a0bc61ea",
     "url": "/likarhelp/static/css/main.0be51713.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/likarhelp/static/js/2.0fae6056.chunk.js"
   },
   {
-    "revision": "6388dcffdf7d58831f97",
-    "url": "/likarhelp/static/js/main.899d7311.chunk.js"
+    "revision": "7c29f2dbaa47a0bc61ea",
+    "url": "/likarhelp/static/js/main.daa35532.chunk.js"
   },
   {
     "revision": "3eb25f2120c7bfb13048",
