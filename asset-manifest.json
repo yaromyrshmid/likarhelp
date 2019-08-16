@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/likarhelp/my-app/static/css/main.cfc77058.chunk.css",
+    "main.js": "/likarhelp/my-app/static/js/main.91c2fd52.chunk.js",
+    "main.js.map": "/likarhelp/my-app/static/js/main.91c2fd52.chunk.js.map",
+    "runtime~main.js": "/likarhelp/my-app/static/js/runtime~main.bec10141.js",
+    "runtime~main.js.map": "/likarhelp/my-app/static/js/runtime~main.bec10141.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/likarhelp/my-app/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.0fae6056.chunk.js": "/likarhelp/my-app/static/js/2.0fae6056.chunk.js",
+    "static/js/2.0fae6056.chunk.js.map": "/likarhelp/my-app/static/js/2.0fae6056.chunk.js.map",
+    "index.html": "/likarhelp/my-app/index.html",
+    "precache-manifest.39c5599e9f4a4521c77241033f0f2643.js": "/likarhelp/my-app/precache-manifest.39c5599e9f4a4521c77241033f0f2643.js",
+    "service-worker.js": "/likarhelp/my-app/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/likarhelp/my-app/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.cfc77058.chunk.css.map": "/likarhelp/my-app/static/css/main.cfc77058.chunk.css.map",
+    "static/media/Parallax.css": "/likarhelp/my-app/static/media/snake_logo.dc34d92b.svg",
+    "static/media/costa-screen1.png": "/likarhelp/my-app/static/media/costa-screen1.9f1a6276.png",
+    "static/media/family_logo.svg": "/likarhelp/my-app/static/media/family_logo.e798b406.svg",
+    "static/media/logo.5a080c56.svg": "/likarhelp/my-app/static/media/logo.5a080c56.svg",
+    "static/media/Screen1.css": "/likarhelp/my-app/static/media/price-tag.243a6986.svg",
+    "static/media/skype-icon.svg": "/likarhelp/my-app/static/media/skype-icon.afc506b3.svg",
+    "static/media/teleg-icon.svg": "/likarhelp/my-app/static/media/teleg-icon.78e323d7.svg",
+    "static/media/viber-icon.svg": "/likarhelp/my-app/static/media/viber-icon.5b5267a9.svg"
+  }
+}
