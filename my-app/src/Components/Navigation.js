@@ -15,11 +15,8 @@ export class Navigation extends React.Component {
     let navlinks = document.querySelectorAll('.nav-link');
     let navbar = document.querySelector('.navbar');
     let corection = navbar.getBoundingClientRect().height * 0.75;
-    console.log('scrollin', vh, navbar.getBoundingClientRect().height, corection);
     screens.forEach((el, index) => {
-      console.log(index, el.getBoundingClientRect().y)
       if (el.getBoundingClientRect().y - corection <= 0 && el.getBoundingClientRect().y - corection > -vh ) {
-        console.log(index);
         navlinks.forEach((el) => {
           el.style.fontWeight = "";
           el.style.color = "";
