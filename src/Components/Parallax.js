@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Navigation } from './Navigation';
 import Screen1 from './Screen1'; 
 import Screen2 from './Screen2';
@@ -7,7 +8,7 @@ import Screen4 from './Screen4';
 import { Container } from 'react-bootstrap';
 import '../css/Parallax.css';
 
-export class Parallax extends React.Component {
+class Parallax extends React.Component {
   render() {
     return(  
       <div>
@@ -18,10 +19,12 @@ export class Parallax extends React.Component {
 
         <Screen1/>
         <Screen2/>
-        <Screen3/>
+        {/* <Screen3/> */}
         <Screen4/>
     </div>
     </div>
     );
   }
 }
+
+export default Parallax;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax } from './Components/Parallax';
+import Parallax from './Components/Parallax';
 import './css/App.css';
 
 export class App extends React.Component {
@@ -9,5 +9,4 @@ export class App extends React.Component {
       <Parallax />
     );
   }
-
 }

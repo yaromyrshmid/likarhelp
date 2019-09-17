@@ -1,7 +1,6 @@
 import React from 'react';
 import Costa from '../images/costa-screen1.png';
 import { Row, Image, Col, Card, Container } from 'react-bootstrap';
-import '../css/Screens.css';
 import '../css/Screen1.css';
 
 
@@ -21,8 +20,8 @@ function Screen1() {
           </Col>
           <Col xs={7}>
             <Row className="flex-row-reverse">
-              <Card>
-                <Card.Body>
+              <Card className="card-tag">
+                <Card.Body className="card-tag-body">
                   <p>Консультація<br/>
                   у вас вдома</p>
                   <p className="dots">...................................</p>
@@ -35,9 +34,9 @@ function Screen1() {
               <Col>
                 <div className="title">
                   <h1>Хірургічна<br/>допомога</h1>
-                  <p>допомога дітям та дорослим<br/>
+                  <p>дітям та дорослим<br/>
                   вдома, телефоном або у лікарні №3<br/>
-                  м.Львів, вул.Раппопорта 6   
+                  м. Львів, вул. Раппопорта 6   
                   </p>
                 </div>
             </Col>

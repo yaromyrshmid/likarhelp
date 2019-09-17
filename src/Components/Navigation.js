@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ReactComponent as Logo } from '../images/logo.svg';
 import { Navbar, Nav, Row, Col, Container } from 'react-bootstrap';
 import '../css/Navigation.css';
@@ -36,9 +37,7 @@ export class Navigation extends React.Component {
   render() {
     return (
       <Container className="navbar-container">
-
         <Navbar className="col-md-2" variant=''>
-          
           <Row> 
             <Navbar.Brand href="#Screen1"><Logo /></Navbar.Brand>
           </Row>
@@ -47,8 +46,7 @@ export class Navigation extends React.Component {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav>
-                    <Nav.Link href="#Screen2">Наша місія</Nav.Link>
-                    <Nav.Link href="#Screen3">Послуги</Nav.Link>
+                    <Nav.Link href="#Screen2">Послуги</Nav.Link>
                     <Nav.Link href="#Screen4">Контакти</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>

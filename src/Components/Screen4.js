@@ -1,8 +1,10 @@
 import React from 'react';
 import { Row, Col, Image, Container } from 'react-bootstrap';
+
 import ViberIcon from '../images/viber-icon.svg';
 import SkypeIcon from '../images/skype-icon.svg';
 import TelegIcon from '../images/teleg-icon.svg';
+import familyLogo from '../images/family_logo.svg';
 import '../css/Screens.css';
 import '../css/Screen4.css';
 
@@ -23,6 +25,12 @@ function Screen4() {
                     <a href="viber://add?number=+380671035848"><Image className="icon" src={ViberIcon} /></a>
                     <a href="viber://add?number=+380671035848"><Image className="icon" src={SkypeIcon} /></a>
                     <a href="viber://add?number=+380671035848"><Image className="icon" src={TelegIcon} /></a>
+                  </Col>
+
+                  <Col md={{span: 4, offset: 4}}>
+                    <Image src={familyLogo} className="familyLogo" alt='family logo' />
+                    <h3 className="text-right">Наша місія:</h3>
+                    <p className="text-right">Медичний сервіс.<br /> Його так бракує медицині сьогодення. Ми створюємо просте і якісне надання послуг людям.<br /> Це необхідно і зручно як пацієнтам, так і лікарям.</p>
                   </Col>
                 </Row>
               </Col>

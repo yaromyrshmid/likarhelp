@@ -7,8 +7,8 @@
 
 .costa {
   margin-top: 21px;
-  width: 505px;
-  height: 607px;
+  width: 63.125vh‬;
+  height: 75.875vh;
   position: absolute;
   left: -50px;
   z-index: 1;
@@ -18,7 +18,7 @@
   margin: 80px 0 0 30px;
 }
 
-.card {
+.card-tag {
   background-image: url('../images/price-tag.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
   overflow: hidden;
 }
 
-.card-body {
+.card-tag-body {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
   font-weight: bold;
 }
 
-.card-body h2 {
+.card-tag-body h2 {
   color: #BD5D69;
   margin-bottom: -8px;
 }
