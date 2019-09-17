@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3c0791d3b0df5a3c8e27b7ec10b7d75",
+    "revision": "f3550b210c85d5b2723d2bf922b66438",
     "url": "/likarhelp/index.html"
   },
   {
-    "revision": "6f56a9098a2d92e39009",
+    "revision": "1e331d269e0f0da95d7c",
     "url": "/likarhelp/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "7c29f2dbaa47a0bc61ea",
-    "url": "/likarhelp/static/css/main.0be51713.chunk.css"
+    "revision": "b65c7720b68e549c17ea",
+    "url": "/likarhelp/static/css/main.e30176b7.chunk.css"
   },
   {
-    "revision": "6f56a9098a2d92e39009",
-    "url": "/likarhelp/static/js/2.0fae6056.chunk.js"
+    "revision": "1e331d269e0f0da95d7c",
+    "url": "/likarhelp/static/js/2.758f9a29.chunk.js"
   },
   {
-    "revision": "7c29f2dbaa47a0bc61ea",
-    "url": "/likarhelp/static/js/main.daa35532.chunk.js"
+    "revision": "b65c7720b68e549c17ea",
+    "url": "/likarhelp/static/js/main.93f12d96.chunk.js"
   },
   {
     "revision": "3eb25f2120c7bfb13048",
