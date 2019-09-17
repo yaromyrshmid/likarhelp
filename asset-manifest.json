@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/likarhelp/static/css/main.e30176b7.chunk.css",
+    "main.css": "/likarhelp/static/css/main.3c94da1b.chunk.css",
     "main.js": "/likarhelp/static/js/main.93f12d96.chunk.js",
     "main.js.map": "/likarhelp/static/js/main.93f12d96.chunk.js.map",
     "runtime~main.js": "/likarhelp/static/js/runtime~main.ae2a20eb.js",
@@ -9,10 +9,10 @@
     "static/js/2.758f9a29.chunk.js": "/likarhelp/static/js/2.758f9a29.chunk.js",
     "static/js/2.758f9a29.chunk.js.map": "/likarhelp/static/js/2.758f9a29.chunk.js.map",
     "index.html": "/likarhelp/index.html",
-    "precache-manifest.a4ed15457e395b18015e4220ee18177a.js": "/likarhelp/precache-manifest.a4ed15457e395b18015e4220ee18177a.js",
+    "precache-manifest.021cf7e29dcefe9d7f0515ba9aef6ecc.js": "/likarhelp/precache-manifest.021cf7e29dcefe9d7f0515ba9aef6ecc.js",
     "service-worker.js": "/likarhelp/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/likarhelp/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.e30176b7.chunk.css.map": "/likarhelp/static/css/main.e30176b7.chunk.css.map",
+    "static/css/main.3c94da1b.chunk.css.map": "/likarhelp/static/css/main.3c94da1b.chunk.css.map",
     "static/media/Parallax.css": "/likarhelp/static/media/snake_logo.dc34d92b.svg",
     "static/media/costa-screen1.png": "/likarhelp/static/media/costa-screen1.9f1a6276.png",
     "static/media/family_logo.svg": "/likarhelp/static/media/family_logo.e798b406.svg",
