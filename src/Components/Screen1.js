@@ -1,37 +1,48 @@
 import React from 'react';
-import Costa from '../images/costa-screen1.png';
+import CostaXs from '../images/costa-screen1-xs.png';
+import CostaSm from '../images/costa-screen1-sm.png';
+import CostaMd from '../images/costa-screen1-md.png';
 import { Row, Image, Col, Card, Container } from 'react-bootstrap';
 import '../css/Screen1.css';
 
 
 function Screen1() {
+  const cardTag = (
+    <Card className="card-tag">
+      <Card.Body className="card-tag-body">
+        <p className="card-o d-inherit d-md-none">o</p>  
+        <p>Консультація<br/>
+        у вас вдома</p>
+        <p className="dots">...................................</p>
+        <h2>200</h2>
+        <p>грн</p>
+      </Card.Body>
+     </Card>
+  )
+
   return (
     <div id="Screen1" className="section bg1">
-      <Container>
-      <Row>
+    <Container>
+    <Row>
       <Col md={{span: 10, offset: 2}}>
-        <hr className="hr-breaker"/>
-        <Row className="flex-row-reverse">
+
+        <hr className="hr-breaker d-none d-md-flex"/>
+        <Row className="flex-row-reverse d-none d-md-flex">
           <a className="phoneNum" href="tel:+380671035848">+38 067 103 5848</a>
         </Row>
+
         <Row>
-          <Col xs={5}>
-            <Image src={Costa} className="costa" alt="Costa Screen1"/> 
+          <Col md={4} lg={5} className="d-none d-md-block">
+            <Image src={CostaMd} className="costa d-none d-md-block" alt="Costa Screen1"/> 
           </Col>
-          <Col xs={7}>
-            <Row className="flex-row-reverse">
-              <Card className="card-tag">
-                <Card.Body className="card-tag-body">
-                  <p>Консультація<br/>
-                  у вас вдома</p>
-                  <p className="dots">...................................</p>
-                  <h2>200</h2>
-                  <p>грн</p>
-                </Card.Body>
-              </Card>
+
+          <Col xs={12} md={8} lg={7}>
+            <Row className="flex-row-reverse d-none d-md-flex">
+              {cardTag}
             </Row>
+
             <Row>
-              <Col>
+              <Col xs={12}>
                 <div className="title">
                   <h1>Хірургічна<br/>допомога</h1>
                   <p>дітям та дорослим<br/>
@@ -39,7 +50,17 @@ function Screen1() {
                   м. Львів, вул. Раппопорта 6   
                   </p>
                 </div>
-            </Col>
+              </Col>
+            </Row>
+
+            <Row className="d-inherit d-md-none">
+              <Col xs={5}>
+                {cardTag}
+              </Col>
+              <Col xs={7}>
+                <Image src={CostaXs} className="costa d-block d-sm-none" alt="Costa Screen1"/>
+                <Image src={CostaSm} className="costa d-none d-sm-block" alt="Costa Screen1"/> 
+              </Col>
             </Row>
           </Col>
           

@@ -18,6 +18,7 @@
     "react-scrollable-anchor": "^0.6.1",
     "react-scrollspy": "^3.4.0",
     "reactstrap": "^8.0.1",
+    "smooth-scroll": "^16.1.0",
     "typescript": "^3.5.3"
   },
   "scripts": {

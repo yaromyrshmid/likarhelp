@@ -1,5 +1,36 @@
 .familyLogo {
   display: block;
-  width: 50%;
+  width: 100px;
   margin-left: auto;
+}
+
+.row-top-contacts {
+  margin-top:15vh;
+}
+
+/* SM */
+@media (min-width: 576px) { 
+  .row-top-contacts {
+    margin-top:130px;
+  }
+
+}
+
+/* MD */
+@media (min-width: 768px) {
+  .row-top-contacts {
+    margin-top:160px;
+  }
+
+
+}
+
+/* LG */
+@media (min-width: 992px) { 
+
+}
+
+/* XL */
+@media (min-width: 1200px) { 
+
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ReactComponent as Logo } from '../images/logo.svg';
-import { Navbar, Nav, Row, Col, Container } from 'react-bootstrap';
+import { Navbar, Nav, Row, Col } from 'react-bootstrap';
 import '../css/Navigation.css';
 
 
@@ -24,6 +24,7 @@ export class Navigation extends React.Component {
         });
         if (index > 0) {
         navlinks[index-1].style.fontWeight = "bold";
+        navlinks[index-1+2].style.fontWeight = "bold";
         }
         if (index === 1) {
           navlinks.forEach((el) => {
@@ -35,25 +36,41 @@ export class Navigation extends React.Component {
   }
 
   render() {
+    const navbarCollapse = (color) => {
+      return (
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav>
+            <Nav.Link href="#Screen2" className={"scroll" + ' ' + color}>Послуги</Nav.Link>
+            <Nav.Link href="#Screen4" className={"scroll" + ' ' + color}>Контакти</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      )
+    }
     return (
-      <Container className="navbar-container">
-        <Navbar className="col-md-2" variant=''>
-          <Row> 
+        <Navbar variant='' expand="md" fixed="top">
+          <Row className="d-flex d-md-none">
+            <Col xs={7} sm={4}>
+              <Navbar.Brand href="#Screen1"><Logo /></Navbar.Brand>
+              <button className="phoneNum d-block d-sm-none" href="tel:+380671035848">	+38 067 103 5848</button>
+            </Col>
+            <Col sm={4} className="d-none d-sm-block d-md-none">
+              <button className="phoneNum" href="tel:+380671035848">	+38 067 103 5848</button>
+            </Col>
+            <Col xs={5} sm={4} className="align-right">
+              <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+              {navbarCollapse('allways-dark')}              
+            </Col>
+            
+          </Row>
+          <Row className="d-none d-md-block">
             <Navbar.Brand href="#Screen1"><Logo /></Navbar.Brand>
           </Row>
-          <Row>
+          <Row className="d-none d-md-block">
             <Col>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav>
-                    <Nav.Link href="#Screen2">Послуги</Nav.Link>
-                    <Nav.Link href="#Screen4">Контакти</Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
+              {navbarCollapse()}
             </Col>
           </Row>
         </Navbar>
-      </Container>
     );
   }
 }

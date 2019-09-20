@@ -25,16 +25,16 @@ a:hover {
 
 h1 {
   font-weight: bolder;
-  font-size: 6.8rem;
-  line-height: 95%;
+  font-size: 4.6rem;
+  line-height: 100%;
   letter-spacing: -0.04rem;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 4.8rem;
-  margin-bottom: 60px;
+  font-size: 4.2rem;
+  margin-bottom: 15px;
   color: #3C3C3B;
 }
 
@@ -46,4 +46,48 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 24px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+
+/* SM */
+@media (min-width: 576px) { 
+
+}
+
+/* MD */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6.2rem;
+    line-height: 95%;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+    margin-bottom: 30px;
+  }
+
+}
+
+/* LG */
+@media (min-width: 992px) { 
+  h1 {
+    font-size: 6.8rem;
+    line-height: 95%;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+}
+
+/* XL */
+@media (min-width: 1200px) { 
+
 }

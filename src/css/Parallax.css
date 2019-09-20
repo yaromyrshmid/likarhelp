@@ -20,15 +20,15 @@
 .bg1 {
   background-image: url('../images/snake_logo.svg');
   background-position: center;
-  background-position-y: 30%;
-  background-size: 436px 622px;
+  background-position-y: 35%;
+  background-size: 60%;
   background-repeat: no-repeat;
   background-color: #EEEEEE;
   overflow: hidden;
 }
 
 .bg2::after {
-  background-image: url('../images/costa-screen2.jpg');
+  background-image: url('../images/costa-screen2-xs.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -53,14 +53,87 @@
   z-index: -1;
 }
 
-.bg3 {
-  background-color: #EEEEEE;
-}
-
 .bg4 {
   background-color: #EEEEEE;
-  background-image: url('../images/Group17.jpg');
+  background-image: url('../images/costa-screen4.jpg');
   background-position: left bottom;
+  background-position-x: 35%;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+/* SM */
+@media (min-width: 576px) { 
+  .bg1 {
+    background-size: 50%;
+  }
+
+  .bg2::after {
+    background-image: url('../images/costa-screen2-sm.png');
+  }
+}
+
+/* MD */
+@media (min-width: 768px) {
+  .bg1 {
+    background-image: url('../images/snake_logo.svg');
+    background-position-y: 30%;
+    background-size: 436px 622px;
+  }
+
+  .bg2::after {
+    background-image: url('../images/costa-screen2-md.png');
+  }
+
+  .bg4 {
+    background-color: #EEEEEE;
+    background-image: url('../images/costa-screen4.jpg');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+}
+
+/* LG */
+@media (min-width: 992px) { 
+  .bg2::after {
+    background-image: url('../images/costa-screen2-lg.png');
+  }
+
+}
+
+/* XL */
+@media (min-width: 1200px) { 
+  .bg2::after {
+    background-image: url('../images/costa-screen2.jpg');
+  }
+
+}
+
+
+/* Mobile landscape */
+@media (min-width: 200px) and (max-width: 575px) and (orientation: landscape) {
+  .wrapper, .section, .container, .bg4 {
+   height: 200vh; 
+  }
+
+  .title, .row-top-contacts {
+    margin-top: 40vh;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+  .wrapper, .section, .container, .bg4 {
+   height: 170vh; 
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 820px) and (max-height:600px) and (orientation: landscape) {
+  .wrapper, .section, .container, .bg4 {
+   height: 200vh; 
+  }
+  
 }
