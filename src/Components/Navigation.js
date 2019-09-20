@@ -35,13 +35,20 @@ export class Navigation extends React.Component {
     })
   }
 
+  anchorClickHandler = (id) => {
+    document.getElementById(id).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    });
+  }
+
   render() {
     const navbarCollapse = (color) => {
       return (
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#Screen2" className={"scroll" + ' ' + color}>Послуги</Nav.Link>
-            <Nav.Link href="#Screen4" className={"scroll" + ' ' + color}>Контакти</Nav.Link>
+            <Nav.Link className={"scroll" + ' ' + color} onClick={()=>this.anchorClickHandler('Screen2')} >Послуги</Nav.Link>
+            <Nav.Link className={"scroll" + ' ' + color} onClick={()=>this.anchorClickHandler('Screen4')} >Контакти</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       )
@@ -50,7 +57,7 @@ export class Navigation extends React.Component {
         <Navbar variant='' expand="md" fixed="top">
           <Row className="d-flex d-md-none">
             <Col xs={7} sm={4}>
-              <Navbar.Brand href="#Screen1"><Logo /></Navbar.Brand>
+              <Navbar.Brand onClick={()=>this.anchorClickHandler('Screen1')} ><Logo /></Navbar.Brand>
               <button className="phoneNum d-block d-sm-none" href="tel:+380671035848">	+38 067 103 5848</button>
             </Col>
             <Col sm={4} className="d-none d-sm-block d-md-none">
@@ -63,7 +70,7 @@ export class Navigation extends React.Component {
             
           </Row>
           <Row className="d-none d-md-block">
-            <Navbar.Brand href="#Screen1"><Logo /></Navbar.Brand>
+            <Navbar.Brand onClick={()=>this.anchorClickHandler('Screen1')} ><Logo /></Navbar.Brand>
           </Row>
           <Row className="d-none d-md-block">
             <Col>
