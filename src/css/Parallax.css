@@ -62,6 +62,7 @@
   height: 100vh;
 }
 
+
 /* SM */
 @media (min-width: 576px) { 
   .bg1 {
@@ -71,6 +72,10 @@
   .bg2::after {
     background-image: url('../images/costa-screen2-sm.png');
   }
+
+  .wrapper, .section, .container, .bg4 {
+    height: 100vh; 
+   }
 }
 
 /* MD */
@@ -136,4 +141,17 @@
    height: 200vh; 
   }
   
+}
+
+/* Mobile portrait */
+@media (max-width: 576px) and (max-height: 600px) {
+  .wrapper, .section, .container, .bg4 {
+    height: 135vh;
+  }
+}
+
+@media (max-width: 576px) and (min-height: 601px) and (max-height: 700px) {
+  .wrapper, .section, .container, .bg4 {
+    height: 115vh;
+  }
 }
