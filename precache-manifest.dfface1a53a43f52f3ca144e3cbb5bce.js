@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ef88cabc0cb6b85909f8d55a6dd94fd",
+    "revision": "cc5557313b50f2a31350e3d430aec331",
     "url": "/likarhelp/index.html"
   },
   {
@@ -8,32 +8,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/likarhelp/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "a1cb080d12f0db4282ea",
-    "url": "/likarhelp/static/css/main.d10016f1.chunk.css"
+    "revision": "02d608762bab9fc308c8",
+    "url": "/likarhelp/static/css/main.ad304ab1.chunk.css"
   },
   {
     "revision": "de1d22c4c4d8ce4adbcd",
     "url": "/likarhelp/static/js/2.fdc68aee.chunk.js"
   },
   {
-    "revision": "a1cb080d12f0db4282ea",
-    "url": "/likarhelp/static/js/main.062c4ff4.chunk.js"
+    "revision": "02d608762bab9fc308c8",
+    "url": "/likarhelp/static/js/main.a284b7aa.chunk.js"
   },
   {
     "revision": "3eb25f2120c7bfb13048",
     "url": "/likarhelp/static/js/runtime~main.ae2a20eb.js"
   },
   {
-    "revision": "f2db39692af3f30e7d953d71f4163fc1",
-    "url": "/likarhelp/static/media/costa-screen1-md.f2db3969.png"
+    "revision": "0cfbc9b200fee041ef66a5672f769382",
+    "url": "/likarhelp/static/media/costa-screen1-md.0cfbc9b2.png"
   },
   {
-    "revision": "9b46ee3ee757a713d9903ca03edf4dd3",
-    "url": "/likarhelp/static/media/costa-screen1-sm.9b46ee3e.png"
+    "revision": "b42cfb0a11e1bfa7fa50003bcc5a07e0",
+    "url": "/likarhelp/static/media/costa-screen1-sm.b42cfb0a.png"
   },
   {
-    "revision": "86900238e03c2c6c2dc17c8ba0ef74be",
-    "url": "/likarhelp/static/media/costa-screen1-xs.86900238.png"
+    "revision": "a5332a56ad12be98ab96d1466ca9f8e0",
+    "url": "/likarhelp/static/media/costa-screen1-xs.a5332a56.png"
   },
   {
     "revision": "cedf0da41f4e569f4b04fa90a9b54247",
@@ -66,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5a080c56a51ae4eca391cfedcdbb1844",
     "url": "/likarhelp/static/media/logo.5a080c56.svg"
-  },
-  {
-    "revision": "243a6986a7950cea653f49b88f5c4077",
-    "url": "/likarhelp/static/media/price-tag.243a6986.svg"
   },
   {
     "revision": "afc506b3ae02b8bb65adaf20c164202f",
