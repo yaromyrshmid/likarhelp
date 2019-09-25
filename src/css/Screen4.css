@@ -1,7 +1,8 @@
 .familyLogo {
   display: block;
-  width: 100px;
-  margin-left: auto;
+  width: 150px;
+  margin: auto;
+  margin-top: 50px; 
 }
 
 .row-top-contacts {
@@ -14,6 +15,9 @@
     margin-top:130px;
   }
 
+  .familyLogo {
+    margin-top: 70px; 
+  }
 }
 
 /* MD */
@@ -21,13 +25,22 @@
   .row-top-contacts {
     margin-top:160px;
   }
+  
+  .familyLogo {
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 0px; 
+  }
 
 
 }
 
 /* LG */
 @media (min-width: 992px) { 
-
+  .familyLogo {
+    margin-left: 0px;
+    width: 200px;
+  }
 }
 
 /* XL */

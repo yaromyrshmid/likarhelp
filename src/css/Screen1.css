@@ -11,10 +11,10 @@
   margin-top: 5vh;
   margin-left: 15px;
   background-color: #EEEEEE;
-  border: 4px solid #BD5D69;
-  border-radius: 20px;
-  height: 160px;
-  width: 130px;
+  border: 3px solid #BD5D69;
+  border-radius: 30px;
+  height: 130px;
+  width: 108px;
   opacity: .67;
   overflow: hidden;
 }
@@ -23,35 +23,36 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 5px 0 0 0;
+  padding: 0;
   text-align: center;
   color: #BD5D69;  
   font-weight: bold;
 }
 
 .card-o {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0px;
 }
 
 .card-p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  margin-bottom: 12px;
 }
 
 .card-tag-body h2 {
   color: #BD5D69;
-  font-size: 3.6rem;
-  margin-bottom: -8px;
+  font-size: 3rem;
+  margin-bottom: -5px;
 }
 
-/* .card-tag-body  */
 .dots {
   width: 100%;
   height: 30px;
   overflow: hidden;
   font-size: 2rem;
   margin-top: -20px;
-  margin-bottom: -10px;
+  margin-bottom: -8px;
 }
 
 
@@ -75,35 +76,25 @@
     margin: 80px 0 0 30px;
   }
 
-  .card-tag {
-    background-image: url('../images/price-tag.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: none;
-    border-radius: 20px;
-    height: 206px;
-    width: 144px;
-    opacity: 1;
+  .card-tag {  
     margin-left: 0;
+    height: 146px;
+    width: 115px;
   }
   
-  .card-tag-body {
-    padding: 53px 5px;
-    opacity: .67;
-  }
-
+  
   .card-p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
   
   .card-tag-body h2 {
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
   
   .dots {
     height: 40px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: -18px;
   }
 }

@@ -58,10 +58,10 @@ export class Navigation extends React.Component {
           <Row className="d-flex d-md-none">
             <Col xs={7} sm={4}>
               <Navbar.Brand onClick={()=>this.anchorClickHandler('Screen1')} ><Logo /></Navbar.Brand>
-              <button className="phoneNum d-block d-sm-none" href="tel:+380671035848">	+38 067 103 5848</button>
+              <a className="phoneNum d-block d-sm-none" href="tel:+380671035848">	+38 067 103 5848</a>
             </Col>
             <Col sm={4} className="d-none d-sm-block d-md-none">
-              <button className="phoneNum" href="tel:+380671035848">	+38 067 103 5848</button>
+              <a className="phoneNum" href="tel:+380671035848">	+38 067 103 5848</a>
             </Col>
             <Col xs={5} sm={4} className="align-right">
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -73,7 +73,7 @@ export class Navigation extends React.Component {
             <Navbar.Brand onClick={()=>this.anchorClickHandler('Screen1')} ><Logo /></Navbar.Brand>
           </Row>
           <Row className="d-none d-md-block">
-            <Col>
+            <Col xs={7}>
               {navbarCollapse()}
             </Col>
           </Row>

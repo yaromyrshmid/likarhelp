@@ -10,12 +10,12 @@ function Screen1() {
   const cardTag = (
     <Card className="card-tag">
       <Card.Body className="card-tag-body">
-        <p className="card-o d-inherit d-md-none">o</p>  
-        <p>Консультація<br/>
-        у вас вдома</p>
+        <p className="card-o">o</p>  
+        <p className="card-p">Консультація<br/>
+        вдома</p>
         <p className="dots">...................................</p>
         <h2>200</h2>
-        <p>грн</p>
+        <p className="card-p">грн</p>
       </Card.Body>
      </Card>
   )
@@ -54,10 +54,10 @@ function Screen1() {
             </Row>
 
             <Row className="d-inherit d-md-none">
-              <Col xs={5}>
+              <Col xs={4}>
                 {cardTag}
               </Col>
-              <Col xs={7}>
+              <Col xs={6}>
                 <Image src={CostaXs} className="costa d-block d-sm-none" alt="Costa Screen1"/>
                 <Image src={CostaSm} className="costa d-none d-sm-block" alt="Costa Screen1"/> 
               </Col>
