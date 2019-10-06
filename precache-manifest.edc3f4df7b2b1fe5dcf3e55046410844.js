@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc5557313b50f2a31350e3d430aec331",
+    "revision": "02e7b59f5e5a3b780fc1eea68a0d0963",
     "url": "/likarhelp/index.html"
   },
   {
-    "revision": "de1d22c4c4d8ce4adbcd",
+    "revision": "391b3e6c4cf2a0ec81aa",
     "url": "/likarhelp/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "02d608762bab9fc308c8",
-    "url": "/likarhelp/static/css/main.ad304ab1.chunk.css"
+    "revision": "50bb3a92a81d6d0b76ed",
+    "url": "/likarhelp/static/css/main.cd088903.chunk.css"
   },
   {
-    "revision": "de1d22c4c4d8ce4adbcd",
-    "url": "/likarhelp/static/js/2.fdc68aee.chunk.js"
+    "revision": "391b3e6c4cf2a0ec81aa",
+    "url": "/likarhelp/static/js/2.e371fc15.chunk.js"
   },
   {
-    "revision": "02d608762bab9fc308c8",
-    "url": "/likarhelp/static/js/main.a284b7aa.chunk.js"
+    "revision": "50bb3a92a81d6d0b76ed",
+    "url": "/likarhelp/static/js/main.6bd05996.chunk.js"
   },
   {
     "revision": "3eb25f2120c7bfb13048",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5a080c56a51ae4eca391cfedcdbb1844",
     "url": "/likarhelp/static/media/logo.5a080c56.svg"
+  },
+  {
+    "revision": "27e6a8cd4854c69fb645bc93367d0e75",
+    "url": "/likarhelp/static/media/logoWhite.27e6a8cd.svg"
   },
   {
     "revision": "afc506b3ae02b8bb65adaf20c164202f",
