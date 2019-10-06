@@ -53,7 +53,7 @@ const Screen2 = () => {
             <Row className="row-top">
               
               <Col md={{span: 10, offset: 2}}>
-              <h2 className="white-text">Наші<br/> послуги</h2>
+              <h2 className="white-text">Послуги</h2>
               <Accordion defaultActiveKey={activeCard}>
                 {accordion}
               </Accordion>

@@ -25,6 +25,10 @@
   padding: 0;
 }
 
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
 .navbar-nav {
   display: block;
   margin-top: 4px;
@@ -41,8 +45,8 @@
 
 .phoneNum {
   border: none;
-  opacity: 0.3;
-  font-size: 1.6rem;
+  opacity: 0.5;
+  font-size: 1.8rem;
   background: none;
   z-index: 500;
   position: relative;

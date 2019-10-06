@@ -117,41 +117,190 @@
 }
 
 
-/* Mobile landscape */
-@media (min-width: 200px) and (max-width: 575px) and (orientation: landscape) {
-  .wrapper, .section, .container, .bg4 {
-   height: 200vh; 
+/* Landscape */
+@media (min-height: 100px) and (orientation: landscape) {
+  .wrapper, .section, .container {
+    height: 350vh; 
+   }
+  .bg4 {
+    height: 300vh; 
   }
-
-  .title, .row-top-contacts {
-    margin-top: 40vh;
+  .title, .row-top, .row-top-contacts {
+    margin-top: 90px;
   }
-
-}
-
-@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
-  .wrapper, .section, .container, .bg4 {
-   height: 170vh; 
-  }
-  
-}
-
-@media (min-width: 768px) and (max-width: 820px) and (max-height:600px) and (orientation: landscape) {
-  .wrapper, .section, .container, .bg4 {
-   height: 200vh; 
-  }
-  
-}
-
-/* Mobile portrait */
-@media (max-width: 576px) and (max-height: 600px) {
-  .wrapper, .section, .container, .bg4 {
-    height: 135vh;
+  .hr-breaker-light, .hr-breaker {
+    height: 400vh;
   }
 }
 
-@media (max-width: 576px) and (min-height: 601px) and (max-height: 700px) {
-  .wrapper, .section, .container, .bg4 {
+@media (min-height: 320px) and (orientation: landscape) {
+  .wrapper, .section, .container {
+    height: 210vh; 
+   }
+  .bg4 {
+    height: 160vh; 
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 210vh;
+  }
+}
+
+@media (min-height: 380px) and (orientation: landscape) {
+  .wrapper, .section, .container {
+    height: 190vh; 
+   }
+  .bg4 {
+    height: 140vh; 
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 190vh;
+  }
+}
+
+@media (min-height: 420px) and (orientation: landscape) {
+  .wrapper, .section, .container {
+    height: 180vh; 
+   }
+  .bg4 {
+    height: 125vh; 
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 180vh;
+  }
+}
+
+@media (min-height: 520px) and (orientation: landscape) {
+  .wrapper, .section, .container {
+    height: 140vh; 
+   }
+  .bg4 {
+    height: 100vh; 
+  }
+  .title, .row-top, .row-top-contacts {
+    margin-top: 150px;
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 180vh;
+  }
+}
+
+@media (min-height: 700px) and (orientation: landscape) {
+  .wrapper, .section, .container {
+    height: 115vh; 
+   }
+  .bg4 {
+    height: 100vh; 
+  }
+  .hr-breaker-light, .hr-breaker {
     height: 115vh;
+  }
+}
+
+@media (min-height: 800px) and (orientation: landscape) {
+  .wrapper, .section, .container {
+    height: 100vh; 
+   }
+  .bg4 {
+    height: 100vh; 
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 100vh;
+  }
+  .title, .row-top, .row-top-contacts {
+    margin-top: 20vh;
+  }
+}
+
+/* Portrait */
+
+@media (min-height: 380px) and (orientation: portrait) {
+  .wrapper, .section, .container {
+    height: 190vh; 
+   }
+  .bg4 {
+    height: 150vh; 
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 190vh;
+  }
+  .title, .row-top, .row-top-contacts {
+    margin-top: 90px;
+  }
+}
+
+@media (min-height: 420px) and (orientation: portrait) {
+  .wrapper, .section, .container {
+    height: 170vh; 
+   }
+  .bg4 {
+    height: 115vh; 
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 170vh;
+  }
+}
+
+@media (min-height: 520px) and (orientation: portrait) {
+  .wrapper, .section, .container {
+    height: 140vh; 
+   }
+  .bg4 {
+    height: 100vh; 
+  }
+  .title, .row-top, .row-top-contacts {
+    margin-top: 120px;
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 180vh;
+  }
+}
+
+@media (min-height: 600px) and (orientation: portrait) {
+  .wrapper, .section, .container {
+    height: 115vh; 
+   }
+  .bg4 {
+    height: 100vh; 
+  }
+  .title, .row-top, .row-top-contacts {
+    margin-top: 130px;
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 115vh;
+  }
+}
+
+@media (min-height: 700px) and (orientation: portrait) {
+  .wrapper, .section, .container {
+    height: 110vh; 
+   }
+  .bg4 {
+    height: 100vh; 
+  }
+
+  .title {
+    margin-top: 20vh;
+  }  
+
+  .row-top, .row-top-contacts {
+    margin-top: 150px;
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 110vh;
+  }
+}
+
+@media (min-height: 800px) and (orientation: portrait) {
+  .wrapper, .section, .container {
+    height: 100vh; 
+   }
+  .bg4 {
+    height: 100vh; 
+  }
+  .hr-breaker-light, .hr-breaker {
+    height: 100vh;
+  }
+  .row-top, .row-top-contacts {
+    margin-top: 15vh;
   }
 }

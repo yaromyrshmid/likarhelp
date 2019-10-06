@@ -45,5 +45,8 @@
 
 /* XL */
 @media (min-width: 1200px) { 
-
+  .familyLogo {
+    margin-left: auto;
+    margin-right: 0px;
+  }
 }

@@ -1,83 +1,129 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { ReactComponent as Logo } from '../images/logo.svg';
-import { Navbar, Nav, Row, Col } from 'react-bootstrap';
+import logo from '../images/logo.svg';
+import logoWhite from '../images/logoWhite.svg';
+import { Navbar, Nav, Row, Col, Image } from 'react-bootstrap';
 import '../css/Navigation.css';
 
 
-export class Navigation extends React.Component {
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, true);
-  }
-  
-  handleScroll = () => {
-    let vh = document.documentElement.clientHeight;
-    let screens = document.querySelectorAll('.section');
-    let navlinks = document.querySelectorAll('.nav-link');
-    let navbar = document.querySelector('.navbar');
-    let corection = navbar.getBoundingClientRect().height * 0.75;
-    screens.forEach((el, index) => {
-      if (el.getBoundingClientRect().y - corection <= 0 && el.getBoundingClientRect().y - corection > -vh ) {
-        navlinks.forEach((el) => {
-          el.style.fontWeight = "";
-          el.style.color = "";
-        });
-        if (index > 0) {
-        navlinks[index-1].style.fontWeight = "bold";
-        navlinks[index-1+2].style.fontWeight = "bold";
-        }
-        if (index === 1) {
-          navlinks.forEach((el) => {
-            el.style.color = "#FFFFFF";
-          });
-        }
-      }
-    })
+export const Navigation = () => {
+  const [logoStyle, setLogoStyle] = useState('');
+  const [servicesStyle, setServicesStyle] = useState({
+    color: '',
+    weight: ''
+  });
+  const [contactsStyle, setContactsStyle] = useState({
+    color: '',
+    weight: ''
+  });
+
+  useEffect(() => {    
+    window.addEventListener('scroll', handleScrollLogo, true);
+  }, [])  
+
+  const handleScrollLogo = () => {
+    const scr1Height = document.querySelector('#Screen1').getBoundingClientRect().height;
+    const scr1Y = document.querySelector('#Screen1').getBoundingClientRect().y;
+    const scr2Height = document.querySelector('#Screen2').getBoundingClientRect().height;
+    const scr2Y = document.querySelector('#Screen2').getBoundingClientRect().y;
+
+    const navbarHeight = document.querySelector('.navbar').getBoundingClientRect().height;
+    
+    if (scr1Height + scr1Y - navbarHeight + 83 < 0 && scr2Height + scr2Y - navbarHeight + 83 > 0) {
+      setServicesStyle({
+        color: "#FFFFFF",
+        weight: 'bold'
+      });
+    } else {
+      setServicesStyle({
+        color: '',
+        weight: ''
+      });
+    }
+
+    if (scr1Height + scr1Y - navbarHeight + 33 < 0 && scr2Height + scr2Y - navbarHeight + 33 > 0) {
+      setContactsStyle({
+        color: "#FFFFFF",
+        weight: ''
+      });
+    } else if (scr2Height + scr2Y - navbarHeight + 33 < 0) {
+      setContactsStyle({
+        color: '',
+        weight: 'bold'
+      });
+    } else {
+      setContactsStyle({
+        color: '',
+        weight: ''
+      });
+    }
+
+    if (scr1Height + scr1Y - 315 + 220 < 0 && scr2Height + scr2Y - 315 + 220 > 0) {
+      setLogoStyle('white');
+    } else {
+      setLogoStyle('');
+    }
   }
 
-  anchorClickHandler = (id) => {
+  const anchorClickHandler = (id) => {
     document.getElementById(id).scrollIntoView({
     behavior: 'smooth',
     block: 'start',
     });
   }
 
-  render() {
-    const navbarCollapse = (color) => {
-      return (
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav>
-            <Nav.Link className={"scroll" + ' ' + color} onClick={()=>this.anchorClickHandler('Screen2')} >Послуги</Nav.Link>
-            <Nav.Link className={"scroll" + ' ' + color} onClick={()=>this.anchorClickHandler('Screen4')} >Контакти</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      )
-    }
+
+  const navbarCollapse = (color) => {
     return (
-        <Navbar variant='' expand="md" fixed="top">
-          <Row className="d-flex d-md-none">
-            <Col xs={7} sm={4}>
-              <Navbar.Brand onClick={()=>this.anchorClickHandler('Screen1')} ><Logo /></Navbar.Brand>
-              <a className="phoneNum d-block d-sm-none" href="tel:+380671035848">	+38 067 103 5848</a>
-            </Col>
-            <Col sm={4} className="d-none d-sm-block d-md-none">
-              <a className="phoneNum" href="tel:+380671035848">	+38 067 103 5848</a>
-            </Col>
-            <Col xs={5} sm={4} className="align-right">
-              <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-              {navbarCollapse('allways-dark')}              
-            </Col>
-            
-          </Row>
-          <Row className="d-none d-md-block">
-            <Navbar.Brand onClick={()=>this.anchorClickHandler('Screen1')} ><Logo /></Navbar.Brand>
-          </Row>
-          <Row className="d-none d-md-block">
-            <Col xs={7}>
-              {navbarCollapse()}
-            </Col>
-          </Row>
-        </Navbar>
-    );
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav>
+          <Nav.Link 
+            className={"scroll " + color} 
+            onClick={()=>anchorClickHandler('Screen2')}
+            style={{color: servicesStyle.color, fontWeight: servicesStyle.weight}}
+          >
+            Послуги
+          </Nav.Link>
+          <Nav.Link
+            className={"scroll " + color} 
+            onClick={()=>anchorClickHandler('Screen4')} 
+            style={{color: contactsStyle.color, fontWeight: contactsStyle.weight}}
+          >
+            Контакти
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    )
   }
+
+  return (
+      <Navbar variant='' expand="md" fixed="top">
+        <Row className="d-flex d-md-none">
+          <Col xs={7} sm={4}>
+            <Navbar.Brand onClick={()=>anchorClickHandler('Screen1')} >
+              <Image src={logoStyle === '' ? logo : logoWhite} alt="logo"/>
+            </Navbar.Brand>
+            <a className="phoneNum d-flex d-sm-none" href="tel:+380671035848">	+38 067 103 5848</a>
+          </Col>
+          <Col sm={4} className="d-none d-sm-flex d-md-none">
+            <a className="phoneNum" href="tel:+380671035848">	+38 067 103 5848</a>
+          </Col>
+          <Col xs={5} sm={4} className="align-right">
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            {navbarCollapse('allways-dark')}              
+          </Col>
+          
+        </Row>
+        <Row className="d-none d-md-block">
+          <Navbar.Brand onClick={()=>anchorClickHandler('Screen1')} >
+            <Image src={logoStyle === '' ? logo : logoWhite} alt="logo"/>
+          </Navbar.Brand>
+        </Row>
+        <Row className="d-none d-md-block">
+          <Col xs={7}>
+            {navbarCollapse()}
+          </Col>
+        </Row>
+      </Navbar>
+  );  
 }
