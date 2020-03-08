@@ -2,41 +2,58 @@
   display: block;
   width: 150px;
   margin: auto;
-  margin-top: 50px; 
+  margin-top: 50px;
 }
 
 .row-top-contacts {
-  margin-top:25vh;
+  margin-top: 25vh;
+}
+
+.btn-contact {
+  margin-top: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  width: 50%;
+  font-size: 1.6rem;
+  display: block;
+}
+
+.qr-code {
+  width: 80px;
+  display: block;
+  margin-top: 10px;
 }
 
 /* SM */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .row-top-contacts {
-    margin-top:130px;
+    margin-top: 130px;
   }
 
   .familyLogo {
-    margin-top: 70px; 
+    margin-top: 70px;
   }
 }
 
 /* MD */
 @media (min-width: 768px) {
   .row-top-contacts {
-    margin-top:160px;
+    margin-top: 160px;
   }
-  
+
   .familyLogo {
     width: 150px;
     margin-left: 30px;
-    margin-top: 0px; 
+    margin-top: 0px;
   }
 
-
+  .btn-contact {
+    width: 100%;
+  }
 }
 
 /* LG */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .familyLogo {
     margin-left: 0px;
     width: 200px;
@@ -44,7 +61,7 @@
 }
 
 /* XL */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .familyLogo {
     margin-left: auto;
     margin-right: 0px;

@@ -1,21 +1,21 @@
-.costa {  
+.costa {
   height: 300px;
   z-index: 0;
 }
 
 .title {
-  margin: 25vh 0 0 10px;
+  margin: 40vh 0 0 10px;
 }
 
 .card-tag {
   margin-top: 5vh;
   margin-left: 15px;
-  background-color: #EEEEEE;
-  border: 3px solid #BD5D69;
+  background-color: #eeeeee;
+  border: 3px solid #bd5d69;
   border-radius: 30px;
   height: 130px;
   width: 108px;
-  opacity: .67;
+  opacity: 0.67;
   overflow: hidden;
 }
 
@@ -25,7 +25,7 @@
   flex-direction: column;
   padding: 0;
   text-align: center;
-  color: #BD5D69;  
+  color: #bd5d69;
   font-weight: bold;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .card-tag-body h2 {
-  color: #BD5D69;
+  color: #bd5d69;
   font-size: 3rem;
   margin-bottom: -5px;
 }
@@ -55,10 +55,9 @@
   margin-bottom: -8px;
 }
 
-
 /* SM */
-@media (min-width: 576px) { 
-  .costa {  
+@media (min-width: 576px) {
+  .costa {
     height: 380px;
   }
 }
@@ -76,22 +75,21 @@
     margin: 80px 0 0 30px;
   }
 
-  .card-tag {  
+  .card-tag {
     margin-left: 0;
     height: 146px;
     width: 115px;
   }
-  
-  
+
   .card-p {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
-  
+
   .card-tag-body h2 {
     font-size: 4rem;
   }
-  
+
   .dots {
     height: 40px;
     font-size: 2.5rem;
@@ -100,14 +98,12 @@
 }
 
 /* LG */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .costa {
     margin-left: -30px;
   }
-
 }
 
 /* XL */
-@media (min-width: 1200px) { 
-
+@media (min-width: 1200px) {
 }

@@ -1,129 +1,161 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import logo from '../images/logo.svg';
-import logoWhite from '../images/logoWhite.svg';
-import { Navbar, Nav, Row, Col, Image } from 'react-bootstrap';
-import '../css/Navigation.css';
-
+import logo from "../images/logo.svg";
+import logoWhite from "../images/logoWhite.svg";
+import { Navbar, Nav, Row, Col, Image } from "react-bootstrap";
+import "../css/Navigation.css";
 
 export const Navigation = () => {
-  const [logoStyle, setLogoStyle] = useState('');
+  const [logoStyle, setLogoStyle] = useState("");
   const [servicesStyle, setServicesStyle] = useState({
-    color: '',
-    weight: ''
+    color: "",
+    weight: ""
   });
   const [contactsStyle, setContactsStyle] = useState({
-    color: '',
-    weight: ''
+    color: "",
+    weight: ""
   });
 
-  useEffect(() => {    
-    window.addEventListener('scroll', handleScrollLogo, true);
-  }, [])  
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollLogo, true);
+  }, []);
 
   const handleScrollLogo = () => {
-    const scr1Height = document.querySelector('#Screen1').getBoundingClientRect().height;
-    const scr1Y = document.querySelector('#Screen1').getBoundingClientRect().y;
-    const scr2Height = document.querySelector('#Screen2').getBoundingClientRect().height;
-    const scr2Y = document.querySelector('#Screen2').getBoundingClientRect().y;
+    const scr1Height = document
+      .querySelector("#Screen1")
+      .getBoundingClientRect().height;
+    const scr1Y = document.querySelector("#Screen1").getBoundingClientRect().y;
+    const scr2Height = document
+      .querySelector("#Screen2")
+      .getBoundingClientRect().height;
+    const scr2Y = document.querySelector("#Screen2").getBoundingClientRect().y;
 
-    const navbarHeight = document.querySelector('.navbar').getBoundingClientRect().height;
-    
-    if (scr1Height + scr1Y - navbarHeight + 83 < 0 && scr2Height + scr2Y - navbarHeight + 83 > 0) {
+    const navbarHeight = document
+      .querySelector(".navbar")
+      .getBoundingClientRect().height;
+
+    if (
+      scr1Height + scr1Y - navbarHeight + 83 < 0 &&
+      scr2Height + scr2Y - navbarHeight + 83 > 0
+    ) {
       setServicesStyle({
         color: "#FFFFFF",
-        weight: 'bold'
+        weight: "bold"
       });
     } else {
       setServicesStyle({
-        color: '',
-        weight: ''
+        color: "",
+        weight: ""
       });
     }
 
-    if (scr1Height + scr1Y - navbarHeight + 33 < 0 && scr2Height + scr2Y - navbarHeight + 33 > 0) {
+    if (
+      scr1Height + scr1Y - navbarHeight + 33 < 0 &&
+      scr2Height + scr2Y - navbarHeight + 33 > 0
+    ) {
       setContactsStyle({
         color: "#FFFFFF",
-        weight: ''
+        weight: ""
       });
     } else if (scr2Height + scr2Y - navbarHeight + 33 < 0) {
       setContactsStyle({
-        color: '',
-        weight: 'bold'
+        color: "",
+        weight: "bold"
       });
     } else {
       setContactsStyle({
-        color: '',
-        weight: ''
+        color: "",
+        weight: ""
       });
     }
 
-    if (scr1Height + scr1Y - 315 + 220 < 0 && scr2Height + scr2Y - 315 + 220 > 0) {
-      setLogoStyle('white');
+    if (
+      scr1Height + scr1Y - 315 + 220 < 0 &&
+      scr2Height + scr2Y - 315 + 220 > 0
+    ) {
+      setLogoStyle("white");
     } else {
-      setLogoStyle('');
+      setLogoStyle("");
     }
-  }
+  };
 
-  const anchorClickHandler = (id) => {
+  const anchorClickHandler = id => {
     document.getElementById(id).scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
+      behavior: "smooth",
+      block: "start"
     });
-  }
+  };
 
-
-  const navbarCollapse = (color) => {
+  const navbarCollapse = color => {
     return (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Nav.Link 
-            className={"scroll " + color} 
-            onClick={()=>anchorClickHandler('Screen2')}
-            style={{color: servicesStyle.color, fontWeight: servicesStyle.weight}}
+          <Nav.Link
+            className={"scroll " + color}
+            onClick={() => anchorClickHandler("Screen2")}
+            style={{
+              color: servicesStyle.color,
+              fontWeight: servicesStyle.weight
+            }}
           >
             Послуги
           </Nav.Link>
           <Nav.Link
-            className={"scroll " + color} 
-            onClick={()=>anchorClickHandler('Screen4')} 
-            style={{color: contactsStyle.color, fontWeight: contactsStyle.weight}}
+            className={"scroll " + color}
+            onClick={() => anchorClickHandler("Screen4")}
+            style={{
+              color: contactsStyle.color,
+              fontWeight: contactsStyle.weight
+            }}
           >
             Контакти
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-    )
-  }
+    );
+  };
 
   return (
-      <Navbar variant='' expand="md" fixed="top">
-        <Row className="d-flex d-md-none">
-          <Col xs={7} sm={4}>
-            <Navbar.Brand onClick={()=>anchorClickHandler('Screen1')} >
-              <Image src={logoStyle === '' ? logo : logoWhite} alt="logo"/>
-            </Navbar.Brand>
-            <a className="phoneNum d-flex d-sm-none" href="tel:+380671035848">	+38 067 103 5848</a>
-          </Col>
-          <Col sm={4} className="d-none d-sm-flex d-md-none">
-            <a className="phoneNum" href="tel:+380671035848">	+38 067 103 5848</a>
-          </Col>
-          <Col xs={5} sm={4} className="align-right">
-            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-            {navbarCollapse('allways-dark')}              
-          </Col>
-          
-        </Row>
-        <Row className="d-none d-md-block">
-          <Navbar.Brand onClick={()=>anchorClickHandler('Screen1')} >
-            <Image src={logoStyle === '' ? logo : logoWhite} alt="logo"/>
+    <Navbar variant="" expand="md" fixed="top">
+      <Row className="d-flex d-md-none">
+        <Col xs={7} sm={4}>
+          <Navbar.Brand onClick={() => anchorClickHandler("Screen1")}>
+            <Image src={logoStyle === "" ? logo : logoWhite} alt="logo" />
+            <span
+              className="sub24-7"
+              style={logoStyle === "" ? {} : { color: "white" }}
+            >
+              24/7
+            </span>
           </Navbar.Brand>
-        </Row>
-        <Row className="d-none d-md-block">
-          <Col xs={7}>
-            {navbarCollapse()}
-          </Col>
-        </Row>
-      </Navbar>
-  );  
-}
+          <a className="phoneNum d-flex d-sm-none" href="tel:+380671035848">
+            +38 067 103 5848
+          </a>
+        </Col>
+        <Col sm={4} className="d-none d-sm-flex d-md-none">
+          <a className="phoneNum" href="tel:+380671035848">
+            +38 067 103 5848
+          </a>
+        </Col>
+        <Col xs={5} sm={4} className="align-right">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          {navbarCollapse("allways-dark")}
+        </Col>
+      </Row>
+      <Row className="d-none d-md-block">
+        <Navbar.Brand onClick={() => anchorClickHandler("Screen1")}>
+          <Image src={logoStyle === "" ? logo : logoWhite} alt="logo" />
+          <span
+            className="sub24-7"
+            style={logoStyle === "" ? {} : { color: "white" }}
+          >
+            24/7
+          </span>
+        </Navbar.Brand>
+      </Row>
+      <Row className="d-none d-md-block">
+        <Col xs={7}>{navbarCollapse()}</Col>
+      </Row>
+    </Navbar>
+  );
+};

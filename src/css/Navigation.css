@@ -9,8 +9,8 @@
   height: 35px;
   width: 40px;
   opacity: 0.3;
-  border: 1px solid #3C3C3B;
-  background-image: url('../images/toggler-icon.svg');
+  border: 1px solid #3c3c3b;
+  background-image: url("../images/toggler-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75% 75%;
@@ -25,6 +25,11 @@
   padding: 0;
 }
 
+.sub24-7 {
+  margin-left: 6px;
+  font-weight: bold;
+}
+
 .navbar-brand:hover {
   cursor: pointer;
 }
@@ -32,13 +37,13 @@
 .navbar-nav {
   display: block;
   margin-top: 4px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border-radius: 6px;
   padding: 10px 10px 2px 5px;
 }
 
 .nav-link {
-  color: #3C3C3B;
+  color: #3c3c3b;
   font-size: 1.7rem;
   margin-bottom: 10px;
 }
@@ -57,11 +62,11 @@
 }
 
 .allways-dark {
-  color: #3C3C3B !important;
+  color: #3c3c3b !important;
 }
 
 /* SM */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .navbar {
     max-width: 540px;
   }
@@ -73,7 +78,6 @@
   .phoneNum {
     margin-top: 7px;
   }
-
 }
 
 /* MD */
@@ -108,24 +112,23 @@
 }
 
 /* LG */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .navbar-brand {
     margin-left: -470px;
   }
 
   .navbar-nav {
-    margin-left: -470px;    
+    margin-left: -470px;
   }
-
 }
 
 /* XL */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .navbar-brand {
     margin-left: -560px;
   }
 
   .navbar-nav {
-    margin-left: -560px;    
+    margin-left: -560px;
   }
 }

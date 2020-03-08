@@ -14,21 +14,21 @@
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;  
+  height: 100vh;
 }
 
 .bg1 {
-  background-image: url('../images/snake_logo.svg');
+  background-image: url("../images/snake_logo.svg");
   background-position: center;
   background-position-y: 35%;
   background-size: 60%;
   background-repeat: no-repeat;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   overflow: hidden;
 }
 
 .bg2::after {
-  background-image: url('../images/costa-screen2-xs.png');
+  background-image: url("../images/costa-screen2-xs.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -42,211 +42,241 @@
   right: 0;
   bottom: 0;
   left: 0;
-  
+
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
   transform: translateZ(-1px) scale(1.5);
   /* Force the background image to fill the whole element. */
   background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */ 
+  /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 }
 
 .bg4 {
-  background-color: #EEEEEE;
-  background-image: url('../images/costa-screen4.jpg');
+  background-color: #eeeeee;
+  background-image: url("../images/costa-screen4.jpg");
   background-position: left bottom;
   background-position-x: 35%;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
-
 /* SM */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .bg1 {
     background-size: 50%;
   }
 
   .bg2::after {
-    background-image: url('../images/costa-screen2-sm.png');
+    background-image: url("../images/costa-screen2-sm.png");
   }
 
-  .wrapper, .section, .container, .bg4 {
-    height: 100vh; 
-   }
+  .wrapper,
+  .section,
+  .container,
+  .bg4 {
+    height: 100vh;
+  }
 }
 
 /* MD */
 @media (min-width: 768px) {
   .bg1 {
-    background-image: url('../images/snake_logo.svg');
+    background-image: url("../images/snake_logo.svg");
     background-position-y: 30%;
     background-size: 436px 622px;
   }
 
   .bg2::after {
-    background-image: url('../images/costa-screen2-md.png');
+    background-image: url("../images/costa-screen2-md.png");
   }
 
   .bg4 {
-    background-color: #EEEEEE;
-    background-image: url('../images/costa-screen4.jpg');
+    background-color: #eeeeee;
+    background-image: url("../images/costa-screen4.jpg");
     background-position: left bottom;
     background-repeat: no-repeat;
     height: 100vh;
   }
-
 }
 
 /* LG */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .bg2::after {
-    background-image: url('../images/costa-screen2-lg.png');
+    background-image: url("../images/costa-screen2-lg.png");
   }
-
 }
 
 /* XL */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .bg2::after {
-    background-image: url('../images/costa-screen2.jpg');
+    background-image: url("../images/costa-screen2.jpg");
   }
-
 }
-
 
 /* Landscape */
 @media (min-height: 100px) and (orientation: landscape) {
-  .wrapper, .section, .container {
-    height: 250vh; 
-   }
+  .wrapper,
+  .section,
+  .container {
+    height: 250vh;
+  }
 
   .bg1 {
-    height: 220vh
-  }  
-  .bg4 {
-    height: 200vh; 
+    height: 220vh;
   }
-  .title, .row-top, .row-top-contacts {
+  .bg4 {
+    height: 200vh;
+  }
+  .title,
+  .row-top,
+  .row-top-contacts {
     margin-top: 90px;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 250vh;
   }
 }
 
 @media (min-height: 320px) and (orientation: landscape) {
-  .wrapper, .section, .container {
-    height: 210vh; 
-   }
+  .wrapper,
+  .section,
+  .container {
+    height: 210vh;
+  }
   .bg1 {
-    height: 180vh
+    height: 180vh;
   }
   .bg4 {
-    height: 160vh; 
+    height: 160vh;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 210vh;
   }
 }
 
 @media (min-height: 380px) and (orientation: landscape) {
-  .wrapper, .section, .container {
-    height: 190vh; 
-   }
+  .wrapper,
+  .section,
+  .container {
+    height: 190vh;
+  }
   .bg1 {
-    height: 170vh
+    height: 170vh;
   }
   .bg4 {
-    height: 140vh; 
+    height: 140vh;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 190vh;
   }
 }
 
 @media (min-height: 420px) and (orientation: landscape) {
-  .wrapper, .section, .container {
-    height: 180vh; 
+  .wrapper,
+  .section,
+  .container {
+    height: 180vh;
   }
-   .bg1 {
-    height: 160vh
+  .bg1 {
+    height: 160vh;
   }
   .bg4 {
-    height: 120vh; 
+    height: 120vh;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 180vh;
   }
 }
 
 @media (min-height: 520px) and (orientation: landscape) {
-  .wrapper, .section, .container {
-    height: 150vh; 
-   }
+  .wrapper,
+  .section,
+  .container {
+    height: 150vh;
+  }
   .bg1 {
-    height: 130vh
+    height: 130vh;
   }
   .bg4 {
-    height: 100vh; 
+    height: 100vh;
   }
-  .title, .row-top, .row-top-contacts {
+  .title,
+  .row-top,
+  .row-top-contacts {
     margin-top: 150px;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 150vh;
   }
 }
 
 @media (min-height: 620px) and (orientation: landscape) {
-  .wrapper, .section, .container {
-    height: 125vh; 
-   }
+  .wrapper,
+  .section,
+  .container {
+    height: 125vh;
+  }
   .bg1 {
-    height: 123vh
+    height: 123vh;
   }
   .bg4 {
-    height: 100vh; 
+    height: 100vh;
   }
-  .title, .row-top, .row-top-contacts {
+  .title,
+  .row-top,
+  .row-top-contacts {
     margin-top: 150px;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 125vh;
   }
 }
 
 @media (min-height: 700px) and (orientation: landscape) {
-  .wrapper, .section, .container {
-    height: 110vh; 
+  .wrapper,
+  .section,
+  .container {
+    height: 110vh;
   }
   .bg1 {
-    height: 105vh
+    height: 105vh;
   }
   .bg4 {
-    height: 100vh; 
+    height: 100vh;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 110vh;
   }
 }
 
 @media (min-height: 800px) and (orientation: landscape) {
-  .wrapper, .section, .container {
-    height: 100vh; 
+  .wrapper,
+  .section,
+  .container {
+    height: 100vh;
   }
   .bg1 {
-    height: 100vh
+    height: 100vh;
   }
   .bg4 {
-    height: 100vh; 
+    height: 100vh;
   }
-  .title, .row-top, .row-top-contacts {
+  .title,
+  .row-top,
+  .row-top-contacts {
     margin-top: 20vh;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 100vh;
   }
 }
@@ -254,89 +284,112 @@
 /* Portrait */
 
 @media (min-height: 380px) and (orientation: portrait) {
-  .wrapper, .section, .container {
-    height: 190vh; 
-   }
+  .wrapper,
+  .section,
+  .container {
+    height: 190vh;
+  }
   .bg1 {
-    height: 150vh
+    height: 150vh;
   }
   .bg4 {
-    height: 140vh; 
+    height: 140vh;
   }
-  .title{
+  .title {
     margin-top: 120px;
-  }  
-  .row-top, .row-top-contacts {
+  }
+  .row-top,
+  .row-top-contacts {
     margin-top: 90px;
   }
 }
 
 @media (min-height: 420px) and (orientation: portrait) {
-  .wrapper, .section, .container {
-    height: 180vh; 
+  .wrapper,
+  .section,
+  .container {
+    height: 180vh;
   }
   .bg1 {
-    height: 130vh
+    height: 130vh;
   }
   .bg4 {
-    height: 120vh; 
+    height: 120vh;
   }
 }
 
 @media (min-height: 520px) and (orientation: portrait) {
-  .wrapper, .section, .container {
-    height: 147vh; 
+  .wrapper,
+  .section,
+  .container {
+    height: 147vh;
   }
   .bg1 {
-    height: 115vh
+    height: 115vh;
   }
   .bg4 {
-    height: 100vh; 
+    height: 100vh;
   }
-  .title, .row-top, .row-top-contacts {
+  .title,
+  .row-top,
+  .row-top-contacts {
     margin-top: 120px;
   }
 }
 
 @media (min-height: 600px) and (orientation: portrait) {
-  .wrapper, .section, .container {
-    height: 125vh; 
-   }
-  .bg1, .bg4 {
-    height: 100vh; 
+  .wrapper,
+  .section,
+  .container {
+    height: 125vh;
   }
-  .title, .row-top, .row-top-contacts {
+  .bg1,
+  .bg4 {
+    height: 100vh;
+  }
+  .title {
+    margin-top: 30vh;
+  }
+  .row-top,
+  .row-top-contacts {
     margin-top: 130px;
   }
 }
 
 @media (min-height: 700px) and (orientation: portrait) {
-  .wrapper, .section, .container {
-    height: 100vh; 
-   }
-   .bg1, .bg4 {
-    height: 100vh; 
+  .wrapper,
+  .section,
+  .container {
+    height: 100vh;
+  }
+  .bg1,
+  .bg4 {
+    height: 100vh;
   }
   .title {
-    margin-top: 20vh;
-  }  
-  .row-top, .row-top-contacts {
+    margin-top: 30vh;
+  }
+  .row-top,
+  .row-top-contacts {
     margin-top: 15vh;
   }
-  .hr-breaker-light, .hr-breaker {
+  .hr-breaker-light,
+  .hr-breaker {
     height: 100vh;
   }
 }
 
-
 @media (min-height: 1300px) and (orientation: portrait) {
-  .wrapper, .section, .container {
-    height: 80vh; 
-   }
-  .bg4 {
-    height: 80vh; 
+  .wrapper,
+  .section,
+  .container {
+    height: 80vh;
   }
-  .hr-breaker-light, .hr-breaker {
+  .bg4 {
+    height: 80vh;
+  }
+  .hr-breaker-light,
+  .hr-breaker {
     height: 80vh;
   }
 }
