@@ -1,0 +1,35 @@
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.modal-table td {
+  font-size: 1.4rem;
+}
+
+.btn-cancel,
+.btn-call {
+  border: none;
+  height: 40px;
+  font-size: 1.6rem;
+  padding: 5px 15px;
+}
+
+.btn-cancel:hover {
+  background-color: #eeeeee;
+  color: #3c3c3b;
+}
+
+.btn-call:hover {
+  background-color: #eeeeee;
+  color: #3c3c3b;
+}
+
+.btn-cancel {
+  background-color: #bd5d69;
+}
+
+.btn-call {
+  padding-top: 8px;
+  background-color: #3c3c3b;
+}

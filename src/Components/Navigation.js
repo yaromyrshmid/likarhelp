@@ -5,7 +5,7 @@ import logoWhite from "../images/logoWhite.svg";
 import { Navbar, Nav, Row, Col, Image } from "react-bootstrap";
 import "../css/Navigation.css";
 
-export const Navigation = () => {
+export const Navigation = props => {
   const [logoStyle, setLogoStyle] = useState("");
   const [servicesStyle, setServicesStyle] = useState({
     color: "",
@@ -86,9 +86,13 @@ export const Navigation = () => {
     });
   };
 
+  const sublinkClickHandler = id => {
+    props.changeActiveCard(id);
+  };
+
   const navbarCollapse = color => {
     return (
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav" className="w-100">
         <Nav>
           <Nav.Link
             className={"scroll " + color}
@@ -99,6 +103,14 @@ export const Navigation = () => {
             }}
           >
             Послуги
+            <ul>
+              <li
+                className="sub-nav-link"
+                onClick={() => sublinkClickHandler("6")}
+              >
+                Медсестринська <br /> допомога
+              </li>
+            </ul>
           </Nav.Link>
           <Nav.Link
             className={"scroll " + color}
@@ -110,6 +122,14 @@ export const Navigation = () => {
           >
             Контакти
           </Nav.Link>
+          <div className="d-flex flex-column align-items-end d-md-none">
+            <a className="phoneNum" href="tel:+380671035848">
+              +38 067 103 5848
+            </a>
+            <a className="phoneNum mt-3" href="mailto:likarhelp@gmail.com">
+              likarhelp@gmail.com
+            </a>
+          </div>
         </Nav>
       </Navbar.Collapse>
     );
@@ -117,8 +137,9 @@ export const Navigation = () => {
 
   return (
     <Navbar variant="" expand="md" fixed="top">
+      {/* xs - sm */}
       <Row className="d-flex d-md-none">
-        <Col xs={7} sm={4}>
+        <Col>
           <Navbar.Brand onClick={() => anchorClickHandler("Screen1")}>
             <Image src={logoStyle === "" ? logo : logoWhite} alt="logo" />
             <span
@@ -128,32 +149,31 @@ export const Navigation = () => {
               24/7
             </span>
           </Navbar.Brand>
-          <a className="phoneNum d-flex d-sm-none" href="tel:+380671035848">
-            +38 067 103 5848
-          </a>
+          <p onClick={() => anchorClickHandler("Screen1")} className="slogan">
+            допомагає і відповідає
+          </p>
         </Col>
-        <Col sm={4} className="d-none d-sm-flex d-md-none">
-          <a className="phoneNum" href="tel:+380671035848">
-            +38 067 103 5848
-          </a>
-        </Col>
-        <Col xs={5} sm={4} className="align-right">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          {navbarCollapse("allways-dark")}
-        </Col>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {navbarCollapse("allways-dark")}
       </Row>
       <Row className="d-none d-md-block">
         <Navbar.Brand onClick={() => anchorClickHandler("Screen1")}>
-          <Image src={logoStyle === "" ? logo : logoWhite} alt="logo" />
-          <span
-            className="sub24-7"
-            style={logoStyle === "" ? {} : { color: "white" }}
-          >
-            24/7
-          </span>
+          <div>
+            <Image src={logoStyle === "" ? logo : logoWhite} alt="logo" />
+            <span
+              className="sub24-7"
+              style={logoStyle === "" ? {} : { color: "white" }}
+            >
+              24/7
+            </span>
+          </div>
+          <p onClick={() => anchorClickHandler("Screen1")} className="slogan">
+            допомагає і відповідає
+          </p>
         </Navbar.Brand>
       </Row>
-      <Row className="d-none d-md-block">
+      <Row className="d-none d-md-flex">
         <Col xs={7}>{navbarCollapse()}</Col>
       </Row>
     </Navbar>

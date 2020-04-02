@@ -1,3 +1,8 @@
+.app-container {
+  overflow: hidden;
+  height: 100vh !important;
+}
+
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
@@ -27,11 +32,16 @@
   overflow: hidden;
 }
 
+.bg2 {
+  overflow: hidden;
+}
+
 .bg2::after {
-  background-image: url("../images/costa-screen2-xs.png");
+  /* background-image: url("../images/costa-screen2-xs.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; */
+  background-color: #3c3c3b;
 }
 
 .parallax::after {
@@ -69,7 +79,7 @@
   }
 
   .bg2::after {
-    background-image: url("../images/costa-screen2-sm.png");
+    /* background-image: url("../images/costa-screen2-sm.png"); */
   }
 
   .wrapper,
@@ -89,7 +99,7 @@
   }
 
   .bg2::after {
-    background-image: url("../images/costa-screen2-md.png");
+    /* background-image: url("../images/costa-screen2-md.png"); */
   }
 
   .bg4 {
@@ -104,14 +114,14 @@
 /* LG */
 @media (min-width: 992px) {
   .bg2::after {
-    background-image: url("../images/costa-screen2-lg.png");
+    /* background-image: url("../images/costa-screen2-lg.png"); */
   }
 }
 
 /* XL */
 @media (min-width: 1200px) {
   .bg2::after {
-    background-image: url("../images/costa-screen2.jpg");
+    /* background-image: url("../images/costa-screen2.jpg"); */
   }
 }
 

@@ -17,6 +17,9 @@
   width: 108px;
   opacity: 0.67;
   overflow: hidden;
+  cursor: pointer;
+
+  margin-right: 15px;
 }
 
 .card-tag-body {

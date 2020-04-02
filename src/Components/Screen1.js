@@ -5,9 +5,9 @@ import CostaMd from "../images/costa-screen1-md.png";
 import { Row, Image, Col, Card, Container } from "react-bootstrap";
 import "../css/Screen1.css";
 
-function Screen1() {
-  const cardTag = (
-    <Card className="card-tag">
+function Screen1({ showModal }) {
+  const cardTag1 = (
+    <Card className="card-tag" onClick={() => showModal(1)}>
       <Card.Body className="card-tag-body">
         <p className="card-o">o</p>
         <p className="card-p">
@@ -17,6 +17,21 @@ function Screen1() {
         </p>
         <p className="dots">...................................</p>
         <h2>200</h2>
+        <p className="card-p">грн</p>
+      </Card.Body>
+    </Card>
+  );
+  const cardTag2 = (
+    <Card className="card-tag" onClick={() => showModal(2)}>
+      <Card.Body className="card-tag-body">
+        <p className="card-o">o</p>
+        <p className="card-p">
+          Послуги інші
+          <br />
+          якісь
+        </p>
+        <p className="dots">...................................</p>
+        <h2>300</h2>
         <p className="card-p">грн</p>
       </Card.Body>
     </Card>
@@ -45,7 +60,8 @@ function Screen1() {
                 lg={{ span: 10, offset: 2 }}
               >
                 <Row className="flex-row-reverse d-none d-md-flex">
-                  {cardTag}
+                  {cardTag1}
+                  {cardTag2}
                 </Row>
 
                 <Row>
@@ -68,7 +84,10 @@ function Screen1() {
                 </Row>
 
                 <Row className="d-inherit d-md-none">
-                  <Col xs={4}>{cardTag}</Col>
+                  <Col xs={4}>
+                    {cardTag1}
+                    {cardTag2}
+                  </Col>
                   <Col xs={6}>
                     {/* <Image
                       src={CostaXs}

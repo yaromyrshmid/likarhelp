@@ -14,6 +14,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75% 75%;
+
+  position: absolute;
+  right: 15px;
 }
 
 .navbar-toggler:focus {
@@ -23,11 +26,24 @@
 .navbar-brand {
   margin: 0;
   padding: 0;
+  transition: 1s ease-out;
 }
 
 .sub24-7 {
   margin-left: 6px;
   font-weight: bold;
+  transition: 1s ease-out;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  color: #bd5d69;
+  opacity: 0.4;
+  width: 180px;
+  overflow: hidden;
+  padding: 3px 18px;
+  background-color: #eeeeee;
+  border-radius: 3px;
 }
 
 .navbar-brand:hover {
@@ -35,17 +51,25 @@
 }
 
 .navbar-nav {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   margin-top: 4px;
   background-color: #eeeeee;
   border-radius: 6px;
-  padding: 10px 10px 2px 5px;
+  padding: 20px 20px;
 }
 
 .nav-link {
   color: #3c3c3b;
   font-size: 1.7rem;
   margin-bottom: 10px;
+  text-align: right;
+  transition: 1s ease-out;
+}
+
+.sub-nav-link {
+  font-size: 1.4rem;
 }
 
 .phoneNum {
@@ -98,11 +122,14 @@
     margin-left: -350px;
     background: none;
     border-radius: none;
+    flex-direction: column !important;
+    align-items: flex-start;
     padding: 0;
   }
 
   .nav-link {
     margin-bottom: 15px;
+    text-align: left;
   }
 
   .phoneNum {
