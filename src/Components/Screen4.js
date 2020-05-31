@@ -46,13 +46,17 @@ function Screen4() {
                         <a href="mailto:likarhelp@gmail.com">
                           likarhelp@gmail.com
                         </a>
-                        <Button
+                        <br />
+                        <a href="mailto:c.tulchinsky@gmail.com">
+                          c.tulchinsky@gmail.com
+                        </a>
+                        {/* <Button
                           className="btn-contact"
                           variant="secondary"
                           href="mailto:likarhelp@gmail.com"
                         >
                           Написати директору
-                        </Button>
+                        </Button> */}
                       </Col>
                     </Row>
 

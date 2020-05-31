@@ -7,7 +7,10 @@ import "../css/Screen1.css";
 
 function Screen1({ showModal }) {
   const cardTag1 = (
-    <Card className="card-tag" onClick={() => showModal(1)}>
+    <Card
+      className="card-tag"
+      // onClick={() => showModal(1)}
+    >
       <Card.Body className="card-tag-body">
         <p className="card-o">o</p>
         <p className="card-p">
@@ -22,16 +25,37 @@ function Screen1({ showModal }) {
     </Card>
   );
   const cardTag2 = (
-    <Card className="card-tag" onClick={() => showModal(2)}>
+    <Card
+      className="card-tag"
+      // onClick={() => showModal(2)}
+    >
       <Card.Body className="card-tag-body">
         <p className="card-o">o</p>
         <p className="card-p">
-          Послуги інші
+          Лікування
           <br />
-          якісь
+          вдома
         </p>
         <p className="dots">...................................</p>
         <h2>300</h2>
+        <p className="card-p">грн</p>
+      </Card.Body>
+    </Card>
+  );
+  const cardTag3 = (
+    <Card
+      className="card-tag"
+      // onClick={() => showModal(3)}
+    >
+      <Card.Body className="card-tag-body">
+        <p className="card-o">o</p>
+        <p className="card-p">
+          Виклик
+          <br />
+          медсестри
+        </p>
+        <p className="dots">...................................</p>
+        <h2>200</h2>
         <p className="card-p">грн</p>
       </Card.Body>
     </Card>
@@ -62,6 +86,7 @@ function Screen1({ showModal }) {
                 <Row className="flex-row-reverse d-none d-md-flex">
                   {cardTag1}
                   {cardTag2}
+                  {cardTag3}
                 </Row>
 
                 <Row>

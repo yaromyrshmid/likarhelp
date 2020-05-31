@@ -5,15 +5,15 @@ import logoWhite from "../images/logoWhite.svg";
 import { Navbar, Nav, Row, Col, Image } from "react-bootstrap";
 import "../css/Navigation.css";
 
-export const Navigation = props => {
+export const Navigation = (props) => {
   const [logoStyle, setLogoStyle] = useState("");
   const [servicesStyle, setServicesStyle] = useState({
     color: "",
-    weight: ""
+    weight: "",
   });
   const [contactsStyle, setContactsStyle] = useState({
     color: "",
-    weight: ""
+    weight: "",
   });
 
   useEffect(() => {
@@ -40,12 +40,12 @@ export const Navigation = props => {
     ) {
       setServicesStyle({
         color: "#FFFFFF",
-        weight: "bold"
+        weight: "bold",
       });
     } else {
       setServicesStyle({
         color: "",
-        weight: ""
+        weight: "",
       });
     }
 
@@ -55,17 +55,17 @@ export const Navigation = props => {
     ) {
       setContactsStyle({
         color: "#FFFFFF",
-        weight: ""
+        weight: "",
       });
     } else if (scr2Height + scr2Y - navbarHeight + 33 < 0) {
       setContactsStyle({
         color: "",
-        weight: "bold"
+        weight: "bold",
       });
     } else {
       setContactsStyle({
         color: "",
-        weight: ""
+        weight: "",
       });
     }
 
@@ -79,18 +79,18 @@ export const Navigation = props => {
     }
   };
 
-  const anchorClickHandler = id => {
+  const anchorClickHandler = (id) => {
     document.getElementById(id).scrollIntoView({
       behavior: "smooth",
-      block: "start"
+      block: "start",
     });
   };
 
-  const sublinkClickHandler = id => {
+  const sublinkClickHandler = (id) => {
     props.changeActiveCard(id);
   };
 
-  const navbarCollapse = color => {
+  const navbarCollapse = (color) => {
     return (
       <Navbar.Collapse id="basic-navbar-nav" className="w-100">
         <Nav>
@@ -99,16 +99,22 @@ export const Navigation = props => {
             onClick={() => anchorClickHandler("Screen2")}
             style={{
               color: servicesStyle.color,
-              fontWeight: servicesStyle.weight
+              fontWeight: servicesStyle.weight,
             }}
           >
             Послуги
             <ul>
               <li
                 className="sub-nav-link"
+                onClick={() => sublinkClickHandler("0")}
+              >
+                Лікаря
+              </li>
+              <li
+                className="sub-nav-link"
                 onClick={() => sublinkClickHandler("6")}
               >
-                Медсестринська <br /> допомога
+                Медсестри
               </li>
             </ul>
           </Nav.Link>
@@ -117,7 +123,7 @@ export const Navigation = props => {
             onClick={() => anchorClickHandler("Screen4")}
             style={{
               color: contactsStyle.color,
-              fontWeight: contactsStyle.weight
+              fontWeight: contactsStyle.weight,
             }}
           >
             Контакти

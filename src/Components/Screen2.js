@@ -49,6 +49,11 @@ const Screen2 = ({ activeCard, changeActiveCard }) => {
           </Col>
         </Row>
       </Container>
+
+      <span className="screen2-note">
+        Вартість вказана орієнтовна і залежатиме від індивідуальної ситуації,
+        про що буде попереджено
+      </span>
     </div>
   );
 };

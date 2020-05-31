@@ -7,16 +7,16 @@ import Screen4 from "./Screen4";
 import Modal from "./Modal";
 import "../css/Parallax.css";
 
-const Parallax = props => {
+const Parallax = (props) => {
   const [activeCard, setActiveCard] = useState("0");
 
-  const changeActiveHandler = eventKey => {
+  const changeActiveHandler = (eventKey) => {
     setActiveCard(eventKey);
   };
 
   const [modalId, setModalId] = useState(0);
 
-  const changeModalHandler = modalKey => {
+  const changeModalHandler = (modalKey) => {
     setModalId(modalKey);
   };
 
