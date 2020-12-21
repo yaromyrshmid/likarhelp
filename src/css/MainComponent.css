@@ -1,0 +1,44 @@
+.bg2 {
+  overflow: hidden;
+}
+
+.bg2 {
+  /* background-image: url("../images/costa-screen2-xs.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; */
+  background-color: #3c3c3b;
+}
+
+.bg4 {
+  background-color: #eeeeee;
+  background-image: url("../images/costa-screen4.jpg");
+  background-position: left bottom;
+  background-position-x: 35%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* SM */
+@media (min-width: 576px) {
+  .bg1 {
+    background-size: 50%;
+  }
+}
+
+/* MD */
+@media (min-width: 768px) {
+  .bg1 {
+    background-image: url("../images/snake_logo.svg");
+    background-position-y: 30%;
+    background-size: 436px 622px;
+  }
+
+  .bg4 {
+    background-color: #eeeeee;
+    background-image: url("../images/costa-screen4.jpg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}

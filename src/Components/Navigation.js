@@ -155,9 +155,11 @@ export const Navigation = (props) => {
               24/7
             </span>
           </Navbar.Brand>
-          <p onClick={() => anchorClickHandler("Screen1")} className="slogan">
-            допомагає і відповідає
-          </p>
+          <div className="d-flex">
+            <p onClick={() => anchorClickHandler("Screen1")} className="slogan">
+              допомагає і відповідає
+            </p>
+          </div>
         </Col>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

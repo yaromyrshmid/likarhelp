@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Row, Col, Container, Card, Accordion } from "react-bootstrap";
 import "../css/Screen2.css";
-import { services } from "./services";
+import { services } from "../data/services";
 
 const Screen2 = ({ activeCard, changeActiveCard }) => {
   const accordion = services.map((category, categoryInd) => {

@@ -1,25 +1,42 @@
-.costa {
-  height: 300px;
-  z-index: 0;
+.screen1-wrapper {
+  min-height: 100vh;
+  background-image: url("../images/snake_logo.svg");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
 }
 
-.title {
-  margin: 40vh 0 0 10px;
+.screen1-contacts {
+  padding-top: 60px;
+}
+
+.screen1-contacts a {
+  opacity: 0.5;
+  font-size: 1.8rem;
+}
+
+.screen1-content {
+  padding-top: 40vh;
+}
+
+.screen1-tags {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
 }
 
 .card-tag {
-  margin-top: 5vh;
-  margin-left: 15px;
   background-color: #eeeeee;
   border: 3px solid #bd5d69;
   border-radius: 30px;
-  height: 130px;
-  width: 108px;
+  height: 115px;
+  width: 110px;
   opacity: 0.67;
   overflow: hidden;
-  /* cursor: pointer; */
-
-  margin-right: 15px;
+  margin-top: 12px;
 }
 
 .card-tag-body {
@@ -33,20 +50,20 @@
 }
 
 .card-o {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 0px;
 }
 
 .card-p {
   font-size: 1.3rem;
-  line-height: 1.6rem;
+  line-height: 1.4rem;
   margin-bottom: 12px;
 }
 
 .card-tag-body h2 {
   color: #bd5d69;
-  font-size: 3rem;
-  margin-bottom: -5px;
+  font-size: 2.2rem;
+  margin-bottom: -3px;
 }
 
 .dots {
@@ -60,51 +77,34 @@
 
 /* SM */
 @media (min-width: 576px) {
-  .costa {
-    height: 380px;
+  .screen1-wrapper {
+    background-size: auto;
   }
 }
 
 /* MD */
 @media (min-width: 768px) {
-  .costa {
-    margin-top: 12vh;
-    margin-left: -100px;
-    height: 580px;
-    width: 482px;
+  .screen1-content {
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .title {
-    margin: 80px 0 0 30px;
+  .screen1-tags {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-bottom: 70px;
   }
 
-  .card-tag {
-    margin-left: 0;
-    height: 146px;
-    width: 115px;
-  }
-
-  .card-p {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-  }
-
-  .card-tag-body h2 {
-    font-size: 4rem;
-  }
-
-  .dots {
-    height: 40px;
-    font-size: 2.5rem;
-    margin-bottom: -18px;
+  .screen1-title-container {
+    padding-left: 31%;
+    margin-bottom: 36px;
   }
 }
 
 /* LG */
 @media (min-width: 992px) {
-  .costa {
-    margin-left: -30px;
-  }
 }
 
 /* XL */

@@ -1,138 +1,64 @@
 import React from "react";
-import CostaXs from "../images/costa-screen1-xs.png";
-import CostaSm from "../images/costa-screen1-sm.png";
-import CostaMd from "../images/costa-screen1-md.png";
-import { Row, Image, Col, Card, Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
+
 import "../css/Screen1.css";
+import priceTags from "../data/priceTags";
 
-function Screen1({ showModal }) {
-  const cardTag1 = (
-    <Card
-      className="card-tag"
-      // onClick={() => showModal(1)}
-    >
-      <Card.Body className="card-tag-body">
-        <p className="card-o">o</p>
-        <p className="card-p">
-          Консультація
-          <br />
-          вдома
-        </p>
-        <p className="dots">...................................</p>
-        <h2>200</h2>
-        <p className="card-p">грн</p>
-      </Card.Body>
-    </Card>
-  );
-  const cardTag2 = (
-    <Card
-      className="card-tag"
-      // onClick={() => showModal(2)}
-    >
-      <Card.Body className="card-tag-body">
-        <p className="card-o">o</p>
-        <p className="card-p">
-          Лікування
-          <br />
-          вдома
-        </p>
-        <p className="dots">...................................</p>
-        <h2>300</h2>
-        <p className="card-p">грн</p>
-      </Card.Body>
-    </Card>
-  );
-  const cardTag3 = (
-    <Card
-      className="card-tag"
-      // onClick={() => showModal(3)}
-    >
-      <Card.Body className="card-tag-body">
-        <p className="card-o">o</p>
-        <p className="card-p">
-          Виклик
-          <br />
-          медсестри
-        </p>
-        <p className="dots">...................................</p>
-        <h2>200</h2>
-        <p className="card-p">грн</p>
-      </Card.Body>
-    </Card>
-  );
+const CardTag = ({ tag: { line1, line2, price } }) => (
+  <Card className="card-tag">
+    <Card.Body className="card-tag-body">
+      <p className="card-o">o</p>
+      <p className="card-p">
+        {line1}
+        <br />
+        {line2}
+      </p>
+      <p className="dots">...................................</p>
+      <h2>{price}</h2>
+      <p className="card-p">грн</p>
+    </Card.Body>
+  </Card>
+);
 
+const Screen1 = () => {
   return (
-    <div id="Screen1" className="section bg1">
+    <div id="Screen1" className="screen1-wrapper">
+      <hr className="hr-breaker d-none d-md-block" />
+
       <Container>
-        <Row>
-          <Col md={{ span: 10, offset: 2 }}>
-            <hr className="hr-breaker d-none d-md-flex" />
-            <Row className="flex-row-reverse d-none d-md-flex">
-              <a className="phoneNum" href="tel:+380671035848">
-                +38 067 103 5848
-              </a>
-            </Row>
+        <div className="phone-container d-none d-md-flex justify-content-end">
+          <div className="d-flex flex-column align-items-end screen1-contacts">
+            <a href="tel:+380671035848">+38 067 103 5848</a>
 
-            <Row>
-              {/* <Col md={4} lg={5} className="d-none d-md-block">
-                <Image src={CostaMd} className="costa d-none d-md-block" alt="Costa Screen1"/> 
-              </Col> */}
+            <a href="mailto:likarhelp@gmail.com">likarhelp@gmail.com</a>
+          </div>
+        </div>
 
-              <Col
-                xs={12}
-                md={{ span: 10, offset: 2 }}
-                lg={{ span: 10, offset: 2 }}
-              >
-                <Row className="flex-row-reverse d-none d-md-flex">
-                  {cardTag1}
-                  {cardTag2}
-                  {cardTag3}
-                </Row>
+        <div className="screen1-content">
+          <div className="screen1-title-container">
+            <h1>
+              Хірургічна
+              <br />
+              допомога
+            </h1>
+            <p>
+              дітям та дорослим
+              <br />
+              вдома, телефоном або у лікарні №3 (каб. 7)
+              <br />
+              м. Львів, вул. Раппопорта 6
+            </p>
+          </div>
 
-                <Row>
-                  <Col xs={12}>
-                    <div className="title">
-                      <h1>
-                        Хірургічна
-                        <br />
-                        допомога
-                      </h1>
-                      <p>
-                        дітям та дорослим
-                        <br />
-                        вдома, телефоном або у лікарні №3 (каб. 7)
-                        <br />
-                        м. Львів, вул. Раппопорта 6
-                      </p>
-                    </div>
-                  </Col>
-                </Row>
-
-                <Row className="d-inherit d-md-none">
-                  <Col xs={4}>
-                    {cardTag1}
-                    {cardTag2}
-                  </Col>
-                  <Col xs={6}>
-                    {/* <Image
-                      src={CostaXs}
-                      className="costa d-block d-sm-none"
-                      alt="Costa Screen1"
-                    />
-                    <Image
-                      src={CostaSm}
-                      className="costa d-none d-sm-block"
-                      alt="Costa Screen1"
-                    /> */}
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+          <div className="screen1-tags">
+            {priceTags.map((tag, index) => (
+              <CardTag tag={tag} key={`${tag.line1}-${index}`} />
+            ))}
+          </div>
+        </div>
       </Container>
     </div>
   );
-}
+};
 
 export default Screen1;

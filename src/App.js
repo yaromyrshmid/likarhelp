@@ -1,12 +1,7 @@
-import React from 'react';
-import Parallax from './Components/Parallax';
-import './css/App.css';
+import React from "react";
+import MainComponent from "./Components/MainComponent";
+import "./css/App.css";
 
-export class App extends React.Component {
-
-  render() {
-    return(
-      <Parallax />
-    );
-  }
-}
+export const App = () => {
+  return <MainComponent />;
+};

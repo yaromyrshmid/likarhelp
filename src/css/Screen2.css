@@ -48,7 +48,7 @@
 }
 
 .screen2-note {
-  position: absolute;
+  /* position: absolute; */
   bottom: 10px;
   right: 0;
   padding: 10px;
