@@ -1,10 +1,10 @@
 .screen1-wrapper {
-  min-height: 100vh;
   background-image: url("../images/snake_logo.svg");
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #eeeeee;
+  position: relative;
 }
 
 .screen1-contacts {

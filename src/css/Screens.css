@@ -1,3 +1,7 @@
+.screen {
+  min-height: 100vh;
+}
+
 .hr-breaker {
   position: absolute;
   top: 0;
@@ -10,13 +14,8 @@
 }
 
 .hr-breaker-light {
-  position: absolute;
-  left: 14%;
-  width: 0px;
-  height: 100vh;
-  border: 1px solid #ffffff;
+  background-color: #ffffff;
   opacity: 0.3;
-  margin: 0;
 }
 
 .icon {

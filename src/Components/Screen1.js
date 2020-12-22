@@ -22,7 +22,7 @@ const CardTag = ({ tag: { line1, line2, price } }) => (
 
 const Screen1 = () => {
   return (
-    <div id="Screen1" className="screen1-wrapper">
+    <div id="Screen1" className="screen screen1-wrapper">
       <hr className="hr-breaker d-none d-md-block" />
 
       <Container>
