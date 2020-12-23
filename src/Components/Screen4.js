@@ -1,9 +1,6 @@
 import React from "react";
 import { Row, Col, Image, Container, Button } from "react-bootstrap";
 
-import ViberIcon from "../images/viber-icon.svg";
-import SkypeIcon from "../images/skype-icon.svg";
-import TelegIcon from "../images/teleg-icon.svg";
 import familyLogo from "../images/family_logo.svg";
 import qrCode from "../images/qr-code-phone.png";
 import "../css/Screens.css";
@@ -11,7 +8,7 @@ import "../css/Screen4.css";
 
 function Screen4() {
   return (
-    <div id="Screen4" className="section bg4">
+    <div id="Screen4" className="screen screen4-wrapper">
       <Container>
         <Row>
           <Col md={{ span: 10, offset: 2 }}>
@@ -19,7 +16,7 @@ function Screen4() {
               <Col md={{ span: 10, offset: 2 }}>
                 <h2>Контакти</h2>
                 <Row>
-                  <Col md={6} xl={8}>
+                  <Col xs={12} md={6} xl={8}>
                     <Row>
                       <Col xs={12} xl={6}>
                         <a
@@ -47,22 +44,16 @@ function Screen4() {
                           likarhelp@gmail.com
                         </a>
                         <br />
-                        <a href="mailto:c.tulchinsky@gmail.com">
-                          c.tulchinsky@gmail.com
-                        </a>
-                        {/* <Button
+
+                        <Button
                           className="btn-contact"
                           variant="secondary"
-                          href="mailto:likarhelp@gmail.com"
+                          href="mailto:c.tulchinsky@gmail.com"
                         >
                           Написати директору
-                        </Button> */}
+                        </Button>
                       </Col>
                     </Row>
-
-                    {/* <a href="viber://chat?number=+380671035848"><Image className="icon" src={ViberIcon} /></a>
-                    <a href="skype:+380671035848?chat"><Image className="icon" src={SkypeIcon} /></a>
-                    <a href="tg://resolve?domain=+380671035848"><Image className="icon" src={TelegIcon} /></a> */}
                   </Col>
 
                   <Col md={6} xl={4}>

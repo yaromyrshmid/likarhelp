@@ -5,7 +5,6 @@ import Screen1 from "./Screen1";
 import Screen2 from "./Screen2";
 import Screen4 from "./Screen4";
 // import Modal from "./Modal";
-import "../css/MainComponent.css";
 
 const MainComponent = () => {
   const [activeCard, setActiveCard] = useState("0");

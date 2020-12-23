@@ -1,8 +1,17 @@
+.screen4-wrapper {
+  background-color: #eeeeee;
+  background-image: url("../images/costa-screen4.jpg");
+  background-position: left bottom;
+  background-position-x: 35%;
+  background-repeat: no-repeat;
+}
+
 .familyLogo {
   display: block;
   width: 150px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .row-top-contacts {
@@ -13,7 +22,7 @@
   margin-top: 10px;
   padding-top: 7px;
   padding-bottom: 5px;
-  width: 50%;
+  width: 100%;
   font-size: 1.6rem;
   display: block;
 }
@@ -26,6 +35,10 @@
 
 /* SM */
 @media (min-width: 576px) {
+  .btn-contact {
+    width: 50%;
+  }
+
   .row-top-contacts {
     margin-top: 130px;
   }
@@ -37,6 +50,10 @@
 
 /* MD */
 @media (min-width: 768px) {
+  .screen4-wrapper {
+    background-position-x: 0;
+  }
+
   .row-top-contacts {
     margin-top: 160px;
   }
